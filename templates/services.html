@@ -1,0 +1,407 @@
+{% extends 'base.html' %}
+
+{% block title %}Advanced Dental Services - RAM DENTAL CLINIC{% endblock %}
+
+{% block content %}
+<!-- Services Hero Section -->
+<section class="page-header services-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Specialized Dental Services</h1>
+                <p class="lead">Advanced, personalized care at RAM DENTAL CLINIC</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Introduction -->
+<section class="services-intro py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <p>At RAM DENTAL CLINIC, we offer a comprehensive range of advanced dental services tailored to meet your individual needs. 
+                From cutting-edge implant solutions to aesthetic smile makeovers and advanced orthodontic treatments, our goal is to provide exceptional care 
+                using the latest techniques and technologies. Our team's expertise and commitment to continuing education ensures you receive the highest standard 
+                of dental care in a comfortable, patient-centered environment.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Dental Implants -->
+<section id="dental-implants" class="service-detail py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                <div class="service-image text-center">
+                    <img src="{{ url_for('static', filename='images/dental-implant.svg') }}" alt="Dental Implants" class="img-fluid" width="1920" height="1080">
+                </div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <h2>Dental Implants</h2>
+                <p class="lead">Permanent, natural-looking tooth replacement</p>
+                <p>RAM DENTAL CLINIC specializes in advanced dental implant solutions that restore both function and aesthetics. 
+                Our dental implant services include:</p>
+                <ul class="service-list">
+                    <li>Single tooth implants</li>
+                    <li>Multiple tooth implants</li>
+                    <li>All-on-4 and All-on-6 implant solutions</li>
+                    <li>Implant-supported dentures</li>
+                    <li>Computer-guided implant placement</li>
+                    <li>Bone grafting procedures</li>
+                    <li>Sinus lifts for upper jaw implants</li>
+                    <li>Same-day emergency implant consultations</li>
+                </ul>
+                <p>Our precision-engineered dental implants are designed to last for decades with proper care, making them an excellent long-term investment in your oral health.</p>
+                <a href="{{ url_for('dental_implants') }}" class="btn btn-primary mt-3">Learn More About Dental Implants</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Full Mouth Rehabilitation -->
+<section id="full-mouth-rehabilitation" class="service-detail py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="service-image text-center">
+                    <svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg" class="img-fluid">
+                        <rect x="50" y="50" width="400" height="200" rx="20" fill="#f0f8ff" stroke="#57b0f6" stroke-width="2"/>
+                        <path d="M150,150 C150,100 200,80 250,80 C300,80 350,100 350,150 C350,200 300,220 250,220 C200,220 150,200 150,150 Z" fill="none" stroke="#57b0f6" stroke-width="3"/>
+                        <path d="M200,140 Q250,160 300,140" fill="none" stroke="#57b0f6" stroke-width="3"/>
+                        <path d="M200,180 Q250,200 300,180" fill="none" stroke="#57b0f6" stroke-width="3"/>
+                        <circle cx="200" cy="120" r="8" fill="#57b0f6"/>
+                        <circle cx="250" cy="120" r="8" fill="#57b0f6"/>
+                        <circle cx="300" cy="120" r="8" fill="#57b0f6"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2>Full Mouth Rehabilitation</h2>
+                <p class="lead">Comprehensive restoration of dental function and aesthetics</p>
+                <p>Full mouth rehabilitation is a comprehensive approach to restoring optimal dental health, function, and appearance 
+                for patients with extensive dental issues. RAM DENTAL CLINIC's expertise includes:</p>
+                <ul class="service-list">
+                    <li>Complete oral assessment and treatment planning</li>
+                    <li>Restoration of severely damaged or decayed teeth</li>
+                    <li>Replacement of missing teeth with bridges or implants</li>
+                    <li>Correction of bite issues and jaw alignment problems</li>
+                    <li>Treatment of advanced gum disease</li>
+                    <li>Aesthetic enhancements for a natural, beautiful smile</li>
+                    <li>Customized solutions for complex dental problems</li>
+                    <li>Long-term maintenance and care plans</li>
+                </ul>
+                <p>Our comprehensive rehabilitation approach addresses all aspects of your oral health, providing a complete transformation that enhances both function and aesthetics.</p>
+                <a href="{{ url_for('full_mouth_rehabilitation') }}" class="btn btn-primary mt-3">Learn More About Full Mouth Rehabilitation</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Invisible Aligners -->
+<section id="invisible-aligners" class="service-detail py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                <div class="service-image text-center">
+                    <svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg" class="img-fluid">
+                        <rect x="50" y="50" width="400" height="200" rx="20" fill="#f0f8ff" stroke="#57b0f6" stroke-width="2"/>
+                        <path d="M170,180 Q250,220 330,180 Q330,120 250,120 Q170,120 170,180 Z" fill="none" stroke="#57b0f6" stroke-width="2" stroke-dasharray="5,5"/>
+                        <path d="M180,175 Q250,210 320,175 Q320,130 250,130 Q180,130 180,175 Z" fill="none" stroke="#57b0f6" stroke-width="3"/>
+                        <circle cx="210" cy="150" r="4" fill="#57b0f6"/>
+                        <circle cx="250" cy="150" r="4" fill="#57b0f6"/>
+                        <circle cx="290" cy="150" r="4" fill="#57b0f6"/>
+                        <path d="M210,170 Q250,185 290,170" fill="none" stroke="#57b0f6" stroke-width="2"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <h2>Invisible Aligners</h2>
+                <p class="lead">Discreet orthodontic treatment for a perfect smile</p>
+                <p>RAM DENTAL CLINIC offers advanced invisible aligner therapy, providing a discreet alternative to traditional braces 
+                for patients seeking orthodontic treatment. Our invisible aligner services include:</p>
+                <ul class="service-list">
+                    <li>Comprehensive orthodontic assessment</li>
+                    <li>Customized treatment planning using 3D digital scanning</li>
+                    <li>Clear, removable aligners for discreet treatment</li>
+                    <li>Solutions for mild to moderate alignment issues</li>
+                    <li>Correction of crowding, spacing, and bite problems</li>
+                    <li>Regular progress monitoring and adjustments</li>
+                    <li>Accelerated treatment options for faster results</li>
+                    <li>Post-treatment retention plans</li>
+                </ul>
+                <p>Invisible aligners offer a comfortable, convenient, and nearly undetectable way to achieve a beautifully aligned smile without the restrictions of traditional metal braces.</p>
+                <a href="{{ url_for('invisible_aligners') }}" class="btn btn-primary mt-3">Learn More About Invisible Aligners</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Smile Makeover -->
+<section id="smile-makeover" class="service-detail py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="service-image text-center">
+                    <img src="{{ url_for('static', filename='images/smile-makeover.svg') }}" alt="Smile Makeover" class="img-fluid" width="1920" height="1080">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2>Smile Makeover</h2>
+                <p class="lead">Comprehensive aesthetic enhancement of your smile</p>
+                <p>A smile makeover at RAM DENTAL CLINIC combines multiple cosmetic dental procedures to create 
+                a harmonious, beautiful smile that complements your facial features. Our smile makeover services include:</p>
+                <ul class="service-list">
+                    <li>Personalized smile design consultation</li>
+                    <li>Digital smile previews and wax-up models</li>
+                    <li>Porcelain veneers for dramatic transformations</li>
+                    <li>Professional teeth whitening for a brighter smile</li>
+                    <li>Tooth reshaping and bonding for minor corrections</li>
+                    <li>Gum contouring for improved proportion</li>
+                    <li>Replacement of old or unaesthetic dental work</li>
+                    <li>Combination treatments tailored to your goals</li>
+                </ul>
+                <p>Our smile makeovers are carefully planned to ensure natural-looking results that enhance your overall appearance while maintaining optimal oral health and function.</p>
+                <a href="{{ url_for('smile_makeover') }}" class="btn btn-primary mt-3">Learn More About Smile Makeovers</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Crowns & Bridges -->
+<section id="crowns-bridges" class="service-detail py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                <div class="service-image text-center">
+                    <svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg" class="img-fluid">
+                        <rect x="50" y="50" width="400" height="200" rx="20" fill="#f0f8ff" stroke="#57b0f6" stroke-width="2"/>
+                        <path d="M170,150 L330,150" stroke="#57b0f6" stroke-width="3"/>
+                        <path d="M190,150 L190,180 C190,190 200,200 210,200 C220,200 230,190 230,180 L230,150" fill="none" stroke="#57b0f6" stroke-width="3"/>
+                        <path d="M230,150 L230,180 C230,190 240,200 250,200 C260,200 270,190 270,180 L270,150" fill="none" stroke="#57b0f6" stroke-width="3"/>
+                        <path d="M270,150 L270,180 C270,190 280,200 290,200 C300,200 310,190 310,180 L310,150" fill="none" stroke="#57b0f6" stroke-width="3"/>
+                        <circle cx="210" cy="120" r="25" fill="none" stroke="#57b0f6" stroke-width="3"/>
+                        <circle cx="290" cy="120" r="25" fill="none" stroke="#57b0f6" stroke-width="3"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <h2>Crowns & Bridges</h2>
+                <p class="lead">Restore damaged teeth and replace missing teeth</p>
+                <p>RAM DENTAL CLINIC provides high-quality crowns and bridges to restore damaged teeth 
+                and replace missing teeth with natural-looking prosthetics. Our crown and bridge services include:</p>
+                <ul class="service-list">
+                    <li>Porcelain crowns for damaged or decayed teeth</li>
+                    <li>All-ceramic and zirconia crowns for optimal aesthetics</li>
+                    <li>Metal-free crown options for biocompatibility</li>
+                    <li>Traditional fixed bridges for missing teeth</li>
+                    <li>Implant-supported crowns and bridges</li>
+                    <li>Digital design and fabrication for precise fit</li>
+                    <li>Same-day temporary crowns during treatment</li>
+                    <li>Long-lasting restorations with proper care</li>
+                </ul>
+                <p>Our crowns and bridges are crafted from premium materials and designed to match your natural teeth, providing a seamless restoration that enhances both function and appearance.</p>
+                <a href="{{ url_for('crowns_bridges') }}" class="btn btn-primary mt-3">Learn More About Crowns & Bridges</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Teeth Whitening -->
+<section id="teeth-whitening" class="service-detail py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="service-image text-center">
+                    <img src="{{ url_for('static', filename='images/teeth-whitening.svg') }}" alt="Teeth Whitening" class="img-fluid" width="1920" height="1080">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2>Teeth Whitening</h2>
+                <p class="lead">Professional brightening for a radiant smile</p>
+                <p>RAM DENTAL CLINIC offers advanced teeth whitening solutions to effectively remove stains and discoloration, 
+                revealing a brighter, more youthful smile. Our teeth whitening services include:</p>
+                <ul class="service-list">
+                    <li>In-office professional whitening for immediate results</li>
+                    <li>Take-home custom whitening kits for gradual improvement</li>
+                    <li>Combination whitening for optimal, long-lasting results</li>
+                    <li>Treatment for various types of tooth discoloration</li>
+                    <li>Safe whitening for sensitive teeth</li>
+                    <li>Stain prevention strategies and recommendations</li>
+                    <li>Touch-up treatments for maintenance</li>
+                    <li>Post-whitening care instructions</li>
+                </ul>
+                <p>Our professional whitening treatments are significantly more effective than over-the-counter products, providing dramatic results while protecting your tooth enamel and gum tissue.</p>
+                <a href="{{ url_for('teeth_whitening') }}" class="btn btn-primary mt-3">Learn More About Teeth Whitening</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Braces Treatment -->
+<section id="braces-treatment" class="service-detail py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                <div class="service-image text-center">
+                    <img src="{{ url_for('static', filename='images/dental-braces.svg') }}" alt="Braces Treatment" class="img-fluid" width="1920" height="1080">
+                </div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <h2>Braces Treatment</h2>
+                <p class="lead">Comprehensive orthodontic solutions for all ages</p>
+                <p>RAM DENTAL CLINIC provides expert orthodontic care using advanced braces technology to correct 
+                misaligned teeth and bite issues. Our braces treatment options include:</p>
+                <ul class="service-list">
+                    <li>Traditional metal braces for comprehensive correction</li>
+                    <li>Ceramic (tooth-colored) braces for a more discreet appearance</li>
+                    <li>Self-ligating braces for reduced treatment time</li>
+                    <li>Lingual (behind-the-teeth) braces for invisible treatment</li>
+                    <li>Interceptive orthodontics for children</li>
+                    <li>Treatment for complex bite issues and jaw misalignment</li>
+                    <li>Accelerated orthodontic techniques</li>
+                    <li>Retainer fitting and maintenance</li>
+                </ul>
+                <p>Our comprehensive approach to orthodontic treatment not only improves the appearance of your smile but also addresses functional issues that can affect your oral health and overall well-being.</p>
+                <a href="{{ url_for('braces_treatment') }}" class="btn btn-primary mt-3">Learn More About Braces Treatment</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Root Canal Treatment -->
+<section id="root-canal-treatment" class="service-detail py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="service-image text-center">
+                    <img src="{{ url_for('static', filename='images/root-canal.svg') }}" alt="Root Canal Treatment" class="img-fluid" width="1920" height="1080">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2>Root Canal Treatment</h2>
+                <p class="lead">Painless, effective therapy to save infected teeth</p>
+                <p>RAM DENTAL CLINIC specializes in modern root canal therapy, using advanced techniques and technology 
+                to save infected or severely damaged teeth. Our root canal services include:</p>
+                <ul class="service-list">
+                    <li>Precise diagnosis using digital imaging</li>
+                    <li>Single-visit root canal therapy when possible</li>
+                    <li>Multi-visit treatment for complex cases</li>
+                    <li>Rotary endodontic techniques for efficient treatment</li>
+                    <li>Effective pain management and sedation options</li>
+                    <li>Treatment for abscessed and severely infected teeth</li>
+                    <li>Post-endodontic restoration planning</li>
+                    <li>Long-term follow-up care</li>
+                </ul>
+                <p>Modern root canal treatment is comfortable, efficient, and has a high success rate for saving teeth that would otherwise require extraction. Our gentle approach ensures a positive experience even for anxious patients.</p>
+                <a href="{{ url_for('root_canal_treatment') }}" class="btn btn-primary mt-3">Learn More About Root Canal Treatment</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Wisdom Tooth Extraction -->
+<section id="wisdom-tooth-extraction" class="service-detail py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                <div class="service-image text-center">
+                    <img src="{{ url_for('static', filename='images/wisdom-tooth-extraction.svg') }}" alt="Wisdom Tooth Extraction" class="img-fluid" width="1920" height="1080">
+                </div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <h2>Wisdom Tooth Extraction</h2>
+                <p class="lead">Safe removal of problematic third molars</p>
+                <p>RAM DENTAL CLINIC provides expert wisdom tooth extraction services to address impacted, infected, or 
+                problematic third molars. Our wisdom tooth removal services include:</p>
+                <ul class="service-list">
+                    <li>Comprehensive evaluation using panoramic X-rays</li>
+                    <li>Extraction of erupted wisdom teeth</li>
+                    <li>Surgical removal of impacted wisdom teeth</li>
+                    <li>Sedation options for patient comfort</li>
+                    <li>Same-day emergency extractions for painful wisdom teeth</li>
+                    <li>Preventive extraction to avoid future complications</li>
+                    <li>Advanced infection control protocols</li>
+                    <li>Detailed post-operative care instructions</li>
+                </ul>
+                <p>Our approach to wisdom tooth extraction prioritizes your comfort while ensuring the complete and safe removal of problematic third molars to protect your oral health and prevent complications.</p>
+                <a href="{{ url_for('wisdom_tooth_extraction') }}" class="btn btn-primary mt-3">Learn More About Wisdom Tooth Extraction</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Tooth-Colored Fillings -->
+<section id="tooth-colored-fillings" class="service-detail py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="service-image text-center">
+                    <img src="{{ url_for('static', filename='images/tooth-colored-fillings.svg') }}" alt="Tooth-Colored Fillings" class="img-fluid" width="1920" height="1080">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2>Tooth-Colored Fillings</h2>
+                <p class="lead">Natural-looking restorations for damaged teeth</p>
+                <p>RAM DENTAL CLINIC provides high-quality, aesthetic tooth-colored fillings to repair cavities 
+                and minor tooth damage. Our tooth-colored filling services include:</p>
+                <ul class="service-list">
+                    <li>Composite resin fillings that match your natural tooth color</li>
+                    <li>Conservative preparation to preserve healthy tooth structure</li>
+                    <li>Durable, long-lasting restoration materials</li>
+                    <li>Replacement of old amalgam (silver) fillings</li>
+                    <li>Bonded fillings for added strength</li>
+                    <li>Restoration of worn or chipped teeth</li>
+                    <li>Metal-free options for patients with sensitivities</li>
+                    <li>BPA-free materials for optimal biocompatibility</li>
+                </ul>
+                <p>Our tooth-colored fillings not only effectively restore your teeth's function but also blend seamlessly with your natural smile, making them virtually undetectable.</p>
+                <a href="{{ url_for('tooth_colored_fillings') }}" class="btn btn-primary mt-3">Learn More About Tooth-Colored Fillings</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Fee and Insurance Information -->
+<section class="fee-insurance py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="text-center mb-4">Fee & Insurance Information</h2>
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Payment Options</h5>
+                        <p>We accept various payment methods, including cash, credit cards, and personal checks. We also offer payment plans for more extensive treatments.</p>
+                        
+                        <h5>Insurance</h5>
+                        <p>We work with most major dental insurance providers and will help you maximize your benefits. Our team is experienced in filing claims and can assist you in understanding your coverage.</p>
+                        
+                        <h5>New Patient Special</h5>
+                        <p>New patients without insurance can take advantage of our special offer: Comprehensive exam, x-rays, and cleaning for $199.</p>
+                        
+                        <div class="alert alert-primary mt-4">
+                            <i class="fas fa-info-circle me-2"></i> Please contact our office for specific information regarding your insurance coverage or to discuss payment options.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="cta-section py-5 bg-primary text-white">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 mb-4 mb-lg-0">
+                <h2>Ready to Experience Quality Dental Care?</h2>
+                <p class="lead mb-0">Contact us today to schedule your appointment and take the first step toward optimal oral health.</p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+                <a href="{{ url_for('contact') }}#appointment-form" class="btn btn-light btn-lg">Request Appointment</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

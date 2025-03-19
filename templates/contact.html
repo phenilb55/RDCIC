@@ -1,0 +1,328 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact Us - RAM DENTAL CLINIC{% endblock %}
+
+{% block content %}
+<!-- Contact Hero Section -->
+<section class="page-header contact-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Contact RAM DENTAL CLINIC</h1>
+                <p class="lead">We're here to help with all your dental needs</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Information -->
+<section class="contact-info py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <div class="contact-details">
+                    <h2>Get in Touch</h2>
+                    <p class="lead">We're happy to answer any questions you may have</p>
+
+                    <div class="contact-item mt-4">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="contact-text">
+                            <h5>Address</h5>
+                            <p>RAM DENTAL CLINIC, Near VED BANGLES, Opp. V.V.MOTORS, Bhavnagar Road, Rajkot, Gujarat - 360003</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="contact-text">
+                            <h5>Phone</h5>
+                            <p>+91 92650 34801</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-text">
+                            <h5>Email</h5>
+                            <p>ramdentalclinic9@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div class="contact-text">
+                            <h5>Office Hours</h5>
+                            <p>Monday - Sunday: 10:00 AM - 01:00 PM<br>
+                            Evening Hours: 05:30 PM - 09:00 PM<br>
+                            Emergency Service: 24/7</p>
+                        </div>
+                    </div>
+
+                    <div class="social-media mt-4">
+                        <h5>Connect With Us</h5>
+                        <div class="social-icons">
+                            <a href="#" class="me-3 text-primary"><i class="fab fa-facebook-f fa-lg"></i></a>
+                            <a href="#" class="me-3 text-danger"><i class="fab fa-instagram fa-lg"></i></a>
+                            <a href="#" class="me-3 text-danger"><i class="fab fa-youtube fa-lg"></i></a>
+                            <a href="#" class="me-3 text-info"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                            <a href="#" class="text-info"><i class="fab fa-twitter fa-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="contact-map">
+                    <h2>Find Us</h2>
+                    <p class="lead mb-4">Conveniently located in the heart of the city</p>
+
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.1656769039423!2d70.81622019999998!3d22.297745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959b5d21dc17103%3A0x8f419d4f38688048!2sRAM%20DENTAL%20CLINIC%20%26%20IMPLANT%20CENTRE!5e1!3m2!1sen!2sin!4v1742323667751!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <div class="map-directions mt-4">
+                        <h5>Directions</h5>
+                        <p>Our clinic is located at the intersection of Main Street and Dental Boulevard, in the central business district. 
+                        We're just one block east of Central Park and directly across from City Cafe.</p>
+
+                        <h5>Parking</h5>
+                        <p>Free parking is available in our dedicated lot behind the building. Additional street parking can be found on Main Street and Dental Boulevard.</p>
+
+                        <h5>Public Transportation</h5>
+                        <p>Bus routes 10, 15, and 22 stop within a block of our office. The Metro Central Station is a 10-minute walk away.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Appointment Request Form -->
+<section id="appointment-form" class="appointment-section py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="card shadow">
+                    <div class="card-body p-5">
+                        <h2 class="text-center mb-4">Request an Appointment</h2>
+                        <p class="text-center mb-4">Fill out the form below, and we'll contact you to confirm your appointment.</p>
+
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="firstName" class="form-label">First Name*</label>
+                                    <input type="text" class="form-control" id="firstName" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="lastName" class="form-label">Last Name*</label>
+                                    <input type="text" class="form-control" id="lastName" required>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label">Email Address*</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="phone" class="form-label">Phone Number*</label>
+                                    <input type="tel" class="form-control" id="phone" required>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="appointmentDate" class="form-label">Preferred Date*</label>
+                                    <input type="date" class="form-control" id="appointmentDate" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="appointmentTime" class="form-label">Preferred Time*</label>
+                                    <select class="form-select" id="appointmentTime" required>
+                                        <option value="" selected disabled>Select a time</option>
+                                        <option value="morning">Morning (9 AM - 12 PM)</option>
+                                        <option value="afternoon">Afternoon (12 PM - 3 PM)</option>
+                                        <option value="evening">Evening (3 PM - 6 PM)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="appointmentType" class="form-label">Reason for Visit*</label>
+                                <select class="form-select" id="appointmentType" required>
+                                    <option value="" selected disabled>Select a reason</option>
+                                    <option value="checkup">Regular Check-up & Cleaning</option>
+                                    <option value="emergency">Dental Emergency</option>
+                                    <option value="consultation">Consultation</option>
+                                    <option value="cosmetic">Cosmetic Dentistry</option>
+                                    <option value="restorative">Restorative Treatment</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Additional Information</label>
+                                <textarea class="form-control" id="message" rows="3" placeholder="Please provide any additional information that may help us prepare for your visit."></textarea>
+                            </div>
+
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="newPatient">
+                                <label class="form-check-label" for="newPatient">I am a new patient</label>
+                            </div>
+
+                            <div class="mb-4 form-check">
+                                <input type="checkbox" class="form-check-input" id="privacyPolicy" required>
+                                <label class="form-check-label" for="privacyPolicy">I agree to the privacy policy and consent to being contacted regarding my appointment request.</label>
+                            </div>
+
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary btn-lg">Submit Request</button>
+                            </div>
+
+                            <p class="text-center mt-3 small">* Required fields</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Emergency Information -->
+<section class="emergency-info py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <div class="alert alert-danger" role="alert">
+                    <div class="row align-items-center">
+                        <div class="col-md-2 text-center text-md-start">
+                            <i class="fas fa-exclamation-triangle fa-3x"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <h4 class="alert-heading">Dental Emergency?</h4>
+                            <p class="mb-0">If you're experiencing severe pain, bleeding, or trauma to your teeth or mouth, please call our emergency line at +91 92650 34801 immediately. We offer same-day emergency appointments for both new and existing patients.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <h4>What to Do in a Dental Emergency</h4>
+                        <ul class="emergency-list">
+                            <li><strong>Toothache:</strong> Rinse your mouth with warm water and gently floss to remove any food particles. Take over-the-counter pain medication as directed.</li>
+                            <li><strong>Chipped/Broken Tooth:</strong> Save any pieces. Rinse your mouth and the broken pieces with warm water. Apply a cold compress to reduce swelling.</li>
+                            <li><strong>Knocked-Out Tooth:</strong> Hold the tooth by the crown (not the root), rinse it gently, and try to reinsert it. If that's not possible, place it in milk or a tooth preservation product.</li>
+                            <li><strong>Lost Filling/Crown:</strong> For a lost filling, stick a piece of sugarless gum into the cavity. For a lost crown, try to slip it back over the tooth using dental cement, denture adhesive, or toothpaste.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>After-Hours Care</h4>
+                        <p>For after-hours emergencies, call our main number, and our answering service will direct you to the on-call dentist. We're committed to providing care when you need it most.</p>
+
+                        <h4>Insurance and Payment for Emergency Care</h4>
+                        <p>Most dental insurance plans cover emergency care. We also accept credit cards, cash, and offer payment plans for emergency services. Your health is our priority—we'll discuss financial arrangements after addressing your immediate needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq-section py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center mb-5">
+                <h2>Frequently Asked Questions</h2>
+                <p class="lead">Quick answers to common questions</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <div class="accordion" id="contactFAQ">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Do you accept insurance?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#contactFAQ">
+                            <div class="accordion-body">
+                                Yes, we accept most major dental insurance plans. Please contact our office with your insurance information, and our team will help you understand your coverage and benefits.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                How do I schedule an appointment?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#contactFAQ">
+                            <div class="accordion-body">
+                                You can schedule an appointment by calling our office at +91 92650 34801 during business hours, using the appointment request form on this page, or sending an email to ramdentalclinic9@gmail.com. Our team will respond promptly to confirm your appointment.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                What should I bring to my first appointment?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#contactFAQ">
+                            <div class="accordion-body">
+                                Please bring your insurance card, photo ID, completed new patient forms (available for download on our website), a list of current medications, and any recent dental X-rays if available. Arriving 15 minutes early will allow time for any additional paperwork.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                What payment methods do you accept?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#contactFAQ">
+                            <div class="accordion-body">
+                                We accept cash, personal checks, credit cards (Visa, MasterCard, American Express, and Discover), and offer financing options through CareCredit. We also provide in-house payment plans for certain treatments. Our team will discuss payment options with you before beginning any treatment.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Do you see children?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#contactFAQ">
+                            <div class="accordion-body">
+                                Yes, we welcome patients of all ages, including children. RAM DENTAL CLINIC has extensive experience in pediatric dentistry and creates a comfortable, positive environment for young patients. We recommend scheduling your child's first dental visit around their first birthday or when their first tooth appears.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="cta-section py-5 bg-primary text-white">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 mb-4 mb-lg-0">
+                <h2>Ready to Schedule Your Visit?</h2>
+                <p class="lead mb-0">Contact us today or use our online form to request an appointment.</p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+                <a href="tel:5551234567" class="btn btn-light btn-lg me-2"><i class="fas fa-phone me-2"></i> Call Now</a>
+                <a href="#appointment-form" class="btn btn-outline-light btn-lg">Book Online</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

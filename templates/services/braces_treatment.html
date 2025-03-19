@@ -1,0 +1,642 @@
+{% extends 'base.html' %}
+
+{% block title %}Braces Treatment - RAM DENTAL CLINIC{% endblock %}
+
+{% block content %}
+<!-- Service Hero Section -->
+<section class="page-header service-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Braces Treatment</h1>
+                <p class="lead">Effective orthodontic solutions for straighter teeth and healthier smiles</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Service Introduction -->
+<section class="service-intro py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <p>At RAM DENTAL CLINIC, we provide comprehensive orthodontic treatments to help patients achieve 
+                properly aligned teeth and jaws. Our braces treatments are designed to not only enhance the 
+                appearance of your smile but also improve oral function and overall dental health.</p>
+                
+                <p>Whether you're dealing with crooked teeth, overcrowding, gaps, or bite issues, our experienced 
+                team offers personalized orthodontic solutions for patients of all ages.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Types of Braces -->
+<section class="braces-types py-5 bg-light">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-md-12 text-center">
+                <h2>Types of Braces We Offer</h2>
+                <p class="lead">Personalized orthodontic solutions for every need</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="braces-card h-100">
+                    <div class="braces-image">
+                        <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" class="img-fluid">
+                            <rect width="400" height="200" fill="#f0f8ff"/>
+                            <path d="M100,100 C120,80 140,80 160,100 C180,120 200,120 220,100 C240,80 260,80 280,100 C300,120 320,120 340,100" fill="none" stroke="#57b0f6" stroke-width="3"/>
+                            <circle cx="130" cy="100" r="5" fill="#57b0f6"/>
+                            <circle cx="170" cy="100" r="5" fill="#57b0f6"/>
+                            <circle cx="210" cy="100" r="5" fill="#57b0f6"/>
+                            <circle cx="250" cy="100" r="5" fill="#57b0f6"/>
+                            <circle cx="290" cy="100" r="5" fill="#57b0f6"/>
+                        </svg>
+                    </div>
+                    <div class="braces-content p-4">
+                        <h4>Traditional Metal Braces</h4>
+                        <p>The most common type of braces, made from high-grade stainless steel. Today's metal braces are smaller, more comfortable, and more attractive than ever before.</p>
+                        
+                        <h5 class="mt-3">Key Benefits:</h5>
+                        <ul>
+                            <li>Effective for treating a wide range of orthodontic issues</li>
+                            <li>Generally the most cost-effective option</li>
+                            <li>Durable and reliable</li>
+                            <li>Colorful elastic ties allow personalization, especially popular with younger patients</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="braces-card h-100">
+                    <div class="braces-image">
+                        <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" class="img-fluid">
+                            <rect width="400" height="200" fill="#f0f8ff"/>
+                            <path d="M100,100 C120,80 140,80 160,100 C180,120 200,120 220,100 C240,80 260,80 280,100 C300,120 320,120 340,100" fill="none" stroke="#e0e0e0" stroke-width="3"/>
+                            <circle cx="130" cy="100" r="5" fill="#e0e0e0"/>
+                            <circle cx="170" cy="100" r="5" fill="#e0e0e0"/>
+                            <circle cx="210" cy="100" r="5" fill="#e0e0e0"/>
+                            <circle cx="250" cy="100" r="5" fill="#e0e0e0"/>
+                            <circle cx="290" cy="100" r="5" fill="#e0e0e0"/>
+                        </svg>
+                    </div>
+                    <div class="braces-content p-4">
+                        <h4>Ceramic Braces</h4>
+                        <p>These braces function like traditional metal braces but are made of clear or tooth-colored ceramic material, making them less noticeable on your teeth.</p>
+                        
+                        <h5 class="mt-3">Key Benefits:</h5>
+                        <ul>
+                            <li>Less visible than metal braces</li>
+                            <li>As effective as metal braces for many orthodontic issues</li>
+                            <li>Ideal for patients concerned about aesthetics during treatment</li>
+                            <li>Popular with adult patients and older teenagers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="braces-card h-100">
+                    <div class="braces-image">
+                        <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" class="img-fluid">
+                            <rect width="400" height="200" fill="#f0f8ff"/>
+                            <path d="M100,100 C120,80 140,80 160,100 C180,120 200,120 220,100 C240,80 260,80 280,100 C300,120 320,120 340,100" fill="none" stroke="#57b0f6" stroke-width="1" stroke-dasharray="5,5"/>
+                            <rect x="120" y="90" width="20" height="20" rx="3" fill="none" stroke="#57b0f6" stroke-width="1" opacity="0.3"/>
+                            <rect x="160" y="90" width="20" height="20" rx="3" fill="none" stroke="#57b0f6" stroke-width="1" opacity="0.3"/>
+                            <rect x="200" y="90" width="20" height="20" rx="3" fill="none" stroke="#57b0f6" stroke-width="1" opacity="0.3"/>
+                            <rect x="240" y="90" width="20" height="20" rx="3" fill="none" stroke="#57b0f6" stroke-width="1" opacity="0.3"/>
+                            <rect x="280" y="90" width="20" height="20" rx="3" fill="none" stroke="#57b0f6" stroke-width="1" opacity="0.3"/>
+                        </svg>
+                    </div>
+                    <div class="braces-content p-4">
+                        <h4>Clear Aligners</h4>
+                        <p>A series of custom-made, clear plastic aligners that gradually move your teeth into position. These are nearly invisible and can be removed for eating, brushing, and flossing.</p>
+                        
+                        <h5 class="mt-3">Key Benefits:</h5>
+                        <ul>
+                            <li>Virtually invisible treatment option</li>
+                            <li>Removable for eating, drinking, brushing, and flossing</li>
+                            <li>Typically more comfortable than traditional braces</li>
+                            <li>Fewer office visits required for adjustments</li>
+                            <li>Ideal for mild to moderate orthodontic issues</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="braces-card h-100">
+                    <div class="braces-image">
+                        <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" class="img-fluid">
+                            <rect width="400" height="200" fill="#f0f8ff"/>
+                            <path d="M100,100 C120,80 140,80 160,100 C180,120 200,120 220,100 C240,80 260,80 280,100 C300,120 320,120 340,100" fill="none" stroke="#57b0f6" stroke-width="3"/>
+                            <circle cx="130" cy="100" r="5" fill="#57b0f6"/>
+                            <circle cx="170" cy="100" r="5" fill="#57b0f6"/>
+                            <circle cx="210" cy="100" r="5" fill="#57b0f6"/>
+                            <circle cx="250" cy="100" r="5" fill="#57b0f6"/>
+                            <circle cx="290" cy="100" r="5" fill="#57b0f6"/>
+                            <rect x="100" y="80" width="240" height="40" fill="#f0f8ff" opacity="0.7"/>
+                        </svg>
+                    </div>
+                    <div class="braces-content p-4">
+                        <h4>Lingual Braces</h4>
+                        <p>Similar to traditional braces but placed on the inside (tongue side) of the teeth, making them invisible from the outside.</p>
+                        
+                        <h5 class="mt-3">Key Benefits:</h5>
+                        <ul>
+                            <li>Completely hidden from view</li>
+                            <li>Effective for many orthodontic issues</li>
+                            <li>Ideal for professionals and adults concerned about appearance</li>
+                            <li>Custom-made for each patient's teeth</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="braces-card h-100">
+                    <div class="braces-image">
+                        <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" class="img-fluid">
+                            <rect width="400" height="200" fill="#f0f8ff"/>
+                            <path d="M100,100 C120,80 140,80 160,100 C180,120 200,120 220,100 C240,80 260,80 280,100 C300,120 320,120 340,100" fill="none" stroke="#57b0f6" stroke-width="3"/>
+                            <circle cx="130" cy="100" r="5" fill="#57b0f6"/>
+                            <circle cx="170" cy="100" r="5" fill="#57b0f6"/>
+                            <circle cx="210" cy="100" r="5" fill="#57b0f6"/>
+                            <circle cx="250" cy="100" r="5" fill="#57b0f6"/>
+                            <circle cx="290" cy="100" r="5" fill="#57b0f6"/>
+                            <path d="M150,130 L250,130" stroke="#57b0f6" stroke-width="3"/>
+                            <path d="M160,140 L240,140" stroke="#57b0f6" stroke-width="3"/>
+                        </svg>
+                    </div>
+                    <div class="braces-content p-4">
+                        <h4>Self-Ligating Braces</h4>
+                        <p>These modern braces use a specialized clip instead of elastic bands to hold the wire in place, potentially reducing friction and treatment time.</p>
+                        
+                        <h5 class="mt-3">Key Benefits:</h5>
+                        <ul>
+                            <li>Often require fewer adjustments</li>
+                            <li>May reduce treatment time for some patients</li>
+                            <li>Generally more comfortable with less friction</li>
+                            <li>Easier to keep clean than traditional braces</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="braces-card h-100">
+                    <div class="braces-image">
+                        <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" class="img-fluid">
+                            <rect width="400" height="200" fill="#f0f8ff"/>
+                            <circle cx="200" cy="100" r="60" fill="none" stroke="#57b0f6" stroke-width="2"/>
+                            <path d="M170,100 L230,100" stroke="#57b0f6" stroke-width="3"/>
+                            <path d="M200,70 L200,130" stroke="#57b0f6" stroke-width="3"/>
+                        </svg>
+                    </div>
+                    <div class="braces-content p-4">
+                        <h4>Two-Phase Treatment</h4>
+                        <p>A specialized approach for children that addresses both tooth alignment and facial development, often starting at a younger age.</p>
+                        
+                        <h5 class="mt-3">Key Benefits:</h5>
+                        <ul>
+                            <li>Addresses developmental issues early</li>
+                            <li>May reduce the need for tooth extraction or surgery later</li>
+                            <li>Can improve facial symmetry and jaw development</li>
+                            <li>Often results in shorter phase-two treatment time</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Common Orthodontic Issues -->
+<section class="orthodontic-issues py-5">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-md-12 text-center">
+                <h2>Common Orthodontic Issues We Treat</h2>
+                <p class="lead">Understanding the problems that braces can solve</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="issue-card h-100">
+                    <div class="issue-image">
+                        <svg viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg" class="img-fluid">
+                            <rect width="300" height="150" fill="#f0f8ff"/>
+                            <path d="M70,75 C80,65 90,60 105,75 C120,90 135,90 150,75 C165,60 180,60 195,75 C210,90 225,90 240,75" fill="none" stroke="#57b0f6" stroke-width="2" transform="rotate(5, 150, 75)"/>
+                        </svg>
+                    </div>
+                    <div class="issue-content p-4">
+                        <h4>Crowded Teeth</h4>
+                        <p>When there's not enough room in the jaw for all teeth to fit normally, resulting in teeth that are crooked, rotated, or overlapping.</p>
+                        <p><strong>Problems:</strong> Difficult to clean properly, increasing risk of tooth decay and gum disease; may cause abnormal wear of tooth surfaces.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 mb-4">
+                <div class="issue-card h-100">
+                    <div class="issue-image">
+                        <svg viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg" class="img-fluid">
+                            <rect width="300" height="150" fill="#f0f8ff"/>
+                            <path d="M70,75 C80,65 90,60 105,75 C120,90 135,90 150,75 C165,60 180,60 195,75 C210,90 225,90 240,75" fill="none" stroke="#57b0f6" stroke-width="2" transform="scale(0.8, 1) translate(30, 0)"/>
+                        </svg>
+                    </div>
+                    <div class="issue-content p-4">
+                        <h4>Spacing Issues</h4>
+                        <p>Gaps or spaces between teeth, often caused by missing teeth, undersized teeth, or habits like thumb-sucking.</p>
+                        <p><strong>Problems:</strong> Food trapped between teeth; potential gum problems; aesthetic concerns; speech issues in some cases.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 mb-4">
+                <div class="issue-card h-100">
+                    <div class="issue-image">
+                        <svg viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg" class="img-fluid">
+                            <rect width="300" height="150" fill="#f0f8ff"/>
+                            <path d="M70,65 C100,45 130,45 160,65 C190,85 220,85 250,65" fill="none" stroke="#57b0f6" stroke-width="2"/>
+                            <path d="M70,85 C100,105 130,105 160,85 C190,65 220,65 250,85" fill="none" stroke="#57b0f6" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="issue-content p-4">
+                        <h4>Overbite</h4>
+                        <p>When the upper front teeth significantly overlap the lower front teeth, also known as a deep bite.</p>
+                        <p><strong>Problems:</strong> May cause excessive wear of front teeth; can lead to gum irritation or damage; potential jaw pain or TMJ issues.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 mb-4">
+                <div class="issue-card h-100">
+                    <div class="issue-image">
+                        <svg viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg" class="img-fluid">
+                            <rect width="300" height="150" fill="#f0f8ff"/>
+                            <path d="M70,85 C100,65 130,65 160,85 C190,105 220,105 250,85" fill="none" stroke="#57b0f6" stroke-width="2"/>
+                            <path d="M70,65 C100,85 130,85 160,65 C190,45 220,45 250,65" fill="none" stroke="#57b0f6" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="issue-content p-4">
+                        <h4>Underbite</h4>
+                        <p>When the lower front teeth protrude beyond the upper front teeth, often caused by undergrowth of the upper jaw or overgrowth of the lower jaw.</p>
+                        <p><strong>Problems:</strong> Difficulty biting and chewing; speech problems; uneven facial appearance; excessive wear on teeth.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 mb-4">
+                <div class="issue-card h-100">
+                    <div class="issue-image">
+                        <svg viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg" class="img-fluid">
+                            <rect width="300" height="150" fill="#f0f8ff"/>
+                            <path d="M50,75 C80,65 110,65 140,75 C170,85 200,85 230,75" fill="none" stroke="#57b0f6" stroke-width="2"/>
+                            <path d="M90,85 C120,75 150,75 180,85 C210,95 240,95 270,85" fill="none" stroke="#57b0f6" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="issue-content p-4">
+                        <h4>Crossbite</h4>
+                        <p>When some upper teeth sit inside the lower teeth rather than outside when the jaws are closed.</p>
+                        <p><strong>Problems:</strong> Asymmetrical jaw growth; abnormal tooth wear; difficulty chewing; potential gum recession in affected areas.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 mb-4">
+                <div class="issue-card h-100">
+                    <div class="issue-image">
+                        <svg viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg" class="img-fluid">
+                            <rect width="300" height="150" fill="#f0f8ff"/>
+                            <path d="M70,65 C100,65 130,65 160,65 C190,65 220,65 250,65" fill="none" stroke="#57b0f6" stroke-width="2"/>
+                            <path d="M70,85 C100,85 130,75 160,75 C190,75 220,85 250,85" fill="none" stroke="#57b0f6" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="issue-content p-4">
+                        <h4>Open Bite</h4>
+                        <p>When the upper and lower front teeth don't meet when the back teeth are closed, often caused by thumb-sucking or tongue thrusting.</p>
+                        <p><strong>Problems:</strong> Difficulty biting and chewing certain foods; speech problems, especially with "s" and "th" sounds; aesthetic concerns.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- The Orthodontic Process -->
+<section class="ortho-process py-5 bg-light">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-md-12 text-center">
+                <h2>The Braces Treatment Process</h2>
+                <p class="lead">What to expect on your orthodontic journey</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>Initial Consultation</h4>
+                            <p>Your journey begins with a thorough examination, including digital X-rays, photographs, and possibly impressions or 3D scans of your teeth. Our orthodontic specialist will discuss your concerns, evaluate your dental health, and explain potential treatment options.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>Customized Treatment Planning</h4>
+                            <p>Based on your diagnostic records, we'll develop a personalized treatment plan that addresses your specific orthodontic needs. This includes selecting the most appropriate type of braces, estimating treatment duration, and discussing financial considerations.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>Braces Placement</h4>
+                            <p>The application of braces is a painless process that typically takes 1-2 hours. We'll clean and prepare your teeth, apply the brackets with special adhesive, and thread the archwire through the brackets. For clear aligners, we'll provide your first set of trays and instructions for use.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>Regular Adjustments</h4>
+                            <p>You'll visit us every 4-8 weeks for adjustments. For traditional braces, we'll change or tighten the wires to continue guiding your teeth into position. For clear aligners, you'll receive new sets of aligners to progress your treatment. These appointments are essential for ensuring your treatment stays on track.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>Progress Monitoring</h4>
+                            <p>Throughout your treatment, we'll monitor the movement of your teeth and make any necessary modifications to your treatment plan. We may take periodic X-rays or scans to assess bone changes and tooth movement.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>Braces Removal</h4>
+                            <p>When your teeth have reached their ideal positions, we'll remove your braces or complete your aligner series. This is an exciting appointment where you'll finally see your new smile! The removal process is quick and comfortable.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>Retention</h4>
+                            <p>After braces are removed, you'll enter the retention phase. You'll receive custom retainers to wear as directed to maintain your new smile. Proper retainer use is crucial for long-term success, as teeth naturally tend to shift back toward their original positions.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>Follow-up Care</h4>
+                            <p>We'll schedule periodic follow-up visits to ensure your teeth remain in their new positions and your retainers continue to fit properly. Our goal is to help you maintain your beautiful smile for a lifetime.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Caring for Braces -->
+<section class="braces-care py-5">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-md-12 text-center">
+                <h2>Caring for Your Braces</h2>
+                <p class="lead">Tips for maintaining good oral health during orthodontic treatment</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="care-card h-100">
+                    <div class="card-body">
+                        <h4><i class="fas fa-toothbrush text-primary me-2"></i>Oral Hygiene</h4>
+                        <p>Proper cleaning is especially important with braces to prevent decay and gum problems:</p>
+                        <ul>
+                            <li>Brush after every meal using a soft-bristled toothbrush</li>
+                            <li>Use interdental brushes to clean around brackets and under wires</li>
+                            <li>Floss daily with floss threaders or orthodontic flossers</li>
+                            <li>Consider using a water flosser for more thorough cleaning</li>
+                            <li>Rinse with fluoride mouthwash to strengthen teeth and prevent decay</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 mb-4">
+                <div class="care-card h-100">
+                    <div class="card-body">
+                        <h4><i class="fas fa-utensils text-primary me-2"></i>Food Restrictions</h4>
+                        <p>Some foods can damage braces or get stuck in them:</p>
+                        <ul>
+                            <li>Avoid hard foods like nuts, hard candies, and ice</li>
+                            <li>Stay away from sticky foods like caramel, taffy, and chewing gum</li>
+                            <li>Cut tough foods like apples and carrots into small pieces</li>
+                            <li>Limit sugary foods and drinks to reduce risk of decay</li>
+                            <li>Be careful with popcorn, chips, and similar foods that can damage braces</li>
+                        </ul>
+                        <p><em>Note: These restrictions generally don't apply to clear aligner patients when aligners are removed for eating.</em></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 mb-4">
+                <div class="care-card h-100">
+                    <div class="card-body">
+                        <h4><i class="fas fa-heartbeat text-primary me-2"></i>Managing Discomfort</h4>
+                        <p>Some discomfort is normal, especially after adjustments:</p>
+                        <ul>
+                            <li>Take over-the-counter pain relievers as needed following package instructions</li>
+                            <li>Use orthodontic wax on brackets that irritate your cheeks or lips</li>
+                            <li>Rinse with warm salt water to soothe irritated areas</li>
+                            <li>Eat soft foods after adjustments when teeth may be sensitive</li>
+                            <li>Be patient—discomfort usually subsides within a few days</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 mb-4">
+                <div class="care-card h-100">
+                    <div class="card-body">
+                        <h4><i class="fas fa-exclamation-triangle text-primary me-2"></i>Handling Emergencies</h4>
+                        <p>Know what to do if issues arise with your braces:</p>
+                        <ul>
+                            <li>For a loose bracket, leave it in place if still attached to the wire and call us</li>
+                            <li>For a protruding wire, use the eraser end of a pencil to gently push it flat against the tooth</li>
+                            <li>For a lost separator, call our office for a replacement</li>
+                            <li>For significant pain or swelling, contact us immediately</li>
+                            <li>Always call if you're unsure—we're here to help!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Benefits of Orthodontic Treatment -->
+<section class="ortho-benefits py-5 bg-light">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-md-12 text-center">
+                <h2>Benefits Beyond a Beautiful Smile</h2>
+                <p class="lead">How orthodontic treatment improves your overall health</p>
+            </div>
+        </div>
+        
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="benefits-image text-center">
+                    <svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg" class="img-fluid">
+                        <rect x="50" y="50" width="400" height="200" rx="20" fill="#f0f8ff" stroke="#57b0f6" stroke-width="2"/>
+                        <circle cx="250" cy="150" r="80" fill="none" stroke="#57b0f6" stroke-width="3"/>
+                        <path d="M200,150 C220,120 280,120 300,150" stroke="#57b0f6" stroke-width="3" fill="none"/>
+                        <circle cx="210" cy="130" r="5" fill="#57b0f6"/>
+                        <circle cx="290" cy="130" r="5" fill="#57b0f6"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="benefits-content">
+                    <div class="benefit-item mb-4">
+                        <h4><i class="fas fa-tooth text-primary me-2"></i>Improved Oral Health</h4>
+                        <p>Straight teeth are easier to clean, reducing your risk of tooth decay, gum disease, and tooth loss. Properly aligned teeth also distribute biting forces evenly, reducing abnormal wear and the risk of fractures.</p>
+                    </div>
+                    
+                    <div class="benefit-item mb-4">
+                        <h4><i class="fas fa-utensils text-primary me-2"></i>Better Chewing and Digestion</h4>
+                        <p>Correcting bite issues improves your ability to properly chew food, which is the first step in the digestive process. This can lead to better nutrition and overall digestive health.</p>
+                    </div>
+                    
+                    <div class="benefit-item mb-4">
+                        <h4><i class="fas fa-comment text-primary me-2"></i>Enhanced Speech</h4>
+                        <p>Teeth play an important role in speech. Orthodontic treatment can correct positioning issues that contribute to speech difficulties, helping to improve pronunciation and clarity.</p>
+                    </div>
+                    
+                    <div class="benefit-item mb-4">
+                        <h4><i class="fas fa-head-side text-primary me-2"></i>Reduced Risk of Jaw Problems</h4>
+                        <p>Properly aligned teeth and jaws can help prevent temporomandibular joint (TMJ) disorders, which can cause pain, headaches, and difficulty opening and closing your mouth.</p>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <h4><i class="fas fa-smile text-primary me-2"></i>Boosted Self-Confidence</h4>
+                        <p>The psychological benefits of an attractive smile shouldn't be underestimated. Many patients report increased self-esteem and confidence after orthodontic treatment, which can positively impact both personal and professional relationships.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQs Section -->
+<section class="faqs-section py-5">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-md-12 text-center">
+                <h2>Common Questions About Braces Treatment</h2>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="accordion" id="bracesFAQs">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What is the best age to get braces?
+                            </button>
+                        </h3>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#bracesFAQs">
+                            <div class="accordion-body">
+                                While orthodontic treatment can be effective at any age, the American Association of Orthodontists recommends an initial evaluation around age 7. This early assessment allows us to identify potential issues and determine the optimal timing for treatment. For children, treatment often begins between ages 9 and 14, when the head and mouth are still growing. However, adults of any age can benefit from orthodontic treatment as well. At RAM DENTAL CLINIC, we treat patients of all ages, with many of our patients being adults seeking to improve their smiles.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                How long will I need to wear braces?
+                            </button>
+                        </h3>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#bracesFAQs">
+                            <div class="accordion-body">
+                                Treatment duration varies considerably depending on the complexity of your case, the type of braces used, and how well you follow your treatment plan. On average, most patients wear braces for 18-24 months. Simple alignment issues might be resolved in as little as 6-12 months, while more complex cases involving bite correction might take 2-3 years. During your consultation, we'll provide an estimated treatment timeline based on your specific needs. Regular appointments and following all instructions will help ensure your treatment progresses as efficiently as possible.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Do braces hurt?
+                            </button>
+                        </h3>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#bracesFAQs">
+                            <div class="accordion-body">
+                                Braces don't hurt during application, but you may experience some discomfort or soreness for a few days after they're first placed and after adjustment appointments. This discomfort is typically mild and can be managed with over-the-counter pain relievers. Your mouth will also need time to adjust to the physical presence of braces, which may cause temporary irritation to your cheeks and lips. We provide orthodontic wax to place over any brackets that cause irritation. Most patients adapt quickly, and the discomfort diminishes significantly within a week.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                How much do braces cost?
+                            </button>
+                        </h3>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#bracesFAQs">
+                            <div class="accordion-body">
+                                The cost of braces varies depending on the type of braces, the complexity of your case, and the estimated treatment duration. At RAM DENTAL CLINIC, we strive to make orthodontic treatment accessible. During your consultation, we'll provide a detailed cost breakdown based on your specific treatment plan. We offer various payment options, including installment plans, and we work with many dental insurance plans that include orthodontic benefits. We believe everyone deserves a beautiful smile and will work with you to find a financial solution that fits your budget.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                What happens after my braces are removed?
+                            </button>
+                        </h3>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#bracesFAQs">
+                            <div class="accordion-body">
+                                After your braces are removed, you'll enter the retention phase of treatment. We'll create custom retainers that you'll need to wear as directed to maintain your new smile. Initially, you may need to wear your retainers full-time, except when eating or cleaning your teeth. Over time, many patients transition to wearing retainers only at night. Consistent retainer use is crucial, as teeth naturally tend to shift back toward their original positions. We'll schedule periodic follow-up visits to monitor your retention and make any necessary adjustments to ensure your beautiful results last a lifetime.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="cta-section py-5 bg-primary text-white">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 mb-4 mb-lg-0">
+                <h2>Ready to Transform Your Smile?</h2>
+                <p class="lead mb-0">Schedule your orthodontic consultation with RAM DENTAL CLINIC today.</p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+                <a href="{{ url_for('contact') }}#appointment-form" class="btn btn-light btn-lg">Book Appointment</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

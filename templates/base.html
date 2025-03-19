@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="RAM DENTAL CLINIC - Professional dental clinic offering comprehensive dental care including implants, rehabilitation, smile makeovers and more.">
+    <meta name="keywords" content="dental clinic, RAM DENTAL CLINIC, dentist, dental implants, smile makeover, teeth whitening, braces, crowns, bridges, root canal treatment">
+    <meta name="theme-color" content="#57b0f6">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='images/favicon.svg') }}">
+
+    <title>{% block title %}RAM DENTAL CLINIC{% endblock %}</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Global CSS for scaling -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
+
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="{{ url_for('static', filename='images/dental-hero.svg') }}" as="image" type="image/svg+xml">
+    <link rel="preload" href="{{ url_for('static', filename='images/dental-implant.svg') }}" as="image" type="image/svg+xml">
+    <link rel="preload" href="{{ url_for('static', filename='images/smile-makeover.svg') }}" as="image" type="image/svg+xml">
+    <link rel="preload" href="{{ url_for('static', filename='images/teeth-whitening.svg') }}" as="image" type="image/svg+xml">
+    <link rel="preload" href="{{ url_for('static', filename='images/dental-braces.svg') }}" as="image" type="image/svg+xml">
+    <link rel="preload" href="{{ url_for('static', filename='images/root-canal.svg') }}" as="image" type="image/svg+xml">
+    <link rel="preload" href="{{ url_for('static', filename='images/wisdom-tooth-extraction.svg') }}" as="image" type="image/svg+xml">
+    <link rel="preload" href="{{ url_for('static', filename='images/tooth-colored-fillings.svg') }}" as="image" type="image/svg+xml">
+
+    <!-- Style modifications for header and brand -->
+    <style>
+    .navbar-brand {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+    .brand-text {
+        color: #57b0f6;
+        letter-spacing: 0.5px;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+    .nav-item {
+        white-space: nowrap;
+        margin: 0 5px;
+    }
+    .navbar .nav-link {
+        padding: 0.5rem 1rem;
+        font-weight: 500;
+    }
+    /* Remove blue lines across website */
+    .border-primary, .border-info, .border-left-primary {
+        border: none !important;
+    }
+    .card, .section-title, .heading-with-line {
+        border: none !important;
+    }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="{{ url_for('index') }}">
+                <i class="fas fa-tooth me-2" style="font-size: 1.8rem; color: #57b0f6;"></i>
+                <span class="brand-text">RAM DENTAL CLINIC</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link {% if active_page == 'home' %}active{% endif %}" href="{{ url_for('index') }}">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle {% if active_page == 'about' %}active{% endif %}" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="{{ url_for('about') }}">About Us</a></li>
+                            <li><a class="dropdown-item" href="{{ url_for('team') }}">Our Team</a></li>
+                            <li><a class="dropdown-item" href="{{ url_for('social_services') }}">Social Services</a></li>
+                            <li><a class="dropdown-item" href="{{ url_for('media') }}">Media</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if active_page == 'why_choose_us' %}active{% endif %}" href="{{ url_for('why_choose_us') }}">Why Choose Us?</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle {% if active_page == 'services' %}active{% endif %}" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="{{ url_for('services') }}">All Services</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="{{ url_for('dental_implants') }}">Dental Implants</a></li>
+                            <li><a class="dropdown-item" href="{{ url_for('full_mouth_rehabilitation') }}">Full Mouth Rehabilitation</a></li>
+                            <li><a class="dropdown-item" href="{{ url_for('invisible_aligners') }}">Invisible Aligners</a></li>
+                            <li><a class="dropdown-item" href="{{ url_for('smile_makeover') }}">Smile Makeover</a></li>
+                            <li><a class="dropdown-item" href="{{ url_for('crowns_bridges') }}">Crowns & Bridges</a></li>
+                            <li><a class="dropdown-item" href="{{ url_for('teeth_whitening') }}">Teeth Whitening</a></li>
+                            <li><a class="dropdown-item" href="{{ url_for('braces_treatment') }}">Braces Treatment</a></li>
+                            <li><a class="dropdown-item" href="{{ url_for('tooth_colored_fillings') }}">Tooth-Colored Fillings</a></li>
+                            <li><a class="dropdown-item" href="{{ url_for('wisdom_tooth_extraction') }}">Wisdom Tooth Extraction</a></li>
+                            <li><a class="dropdown-item" href="{{ url_for('root_canal_treatment') }}">Root Canal Treatment</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if active_page == 'gallery' %}active{% endif %}" href="{{ url_for('gallery') }}">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if active_page == 'contact' %}active{% endif %}" href="{{ url_for('contact') }}">Contact</a>
+                    </li>
+                </ul>
+                <div class="appointment-btn ms-lg-3">
+                    <a href="{{ url_for('contact') }}#appointment-form" class="btn btn-primary">Book Appointment</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer mt-5 py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-4"><i class="fas fa-tooth me-2"></i> RAM DENTAL CLINIC</h5>
+                    <p>Providing exceptional dental care with the latest technology and a gentle touch. Your healthy smile is our commitment.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="me-3 text-primary"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="me-3 text-danger"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="me-3 text-danger"><i class="fab fa-youtube fa-lg"></i></a>
+                        <a href="#" class="me-3 text-info"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                        <a href="#" class="me-3 text-info"><i class="fab fa-twitter fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-4">Working Hours</h5>
+                    <ul class="list-unstyled hours-list">
+                        <li><span>Monday - Sunday:</span> 10:00 AM - 01:00 PM</li>
+                        <li><span>Evening Hours:</span> 05:30 PM - 09:00 PM</li>
+                        <li><span>Emergency Service:</span> 24/7</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mb-4">Contact Info</h5>
+                    <ul class="list-unstyled contact-info">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> RAM DENTAL CLINIC, Near VED BANGLES, Opp. V.V.MOTORS, Bhavnagar Road, Rajkot, Gujarat - 360003</li>
+                        <li><i class="fas fa-phone me-2"></i> +91 92650 34801</li>
+                        <li><i class="fas fa-envelope me-2"></i> ramdentalclinic9@gmail.com</li>
+                    </ul>
+                    <a href="https://maps.app.goo.gl/tgwhmrjTxud3V7Fk9" 
+                       target="_blank" class="btn btn-outline-primary mt-3">Get Directions</a>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 RAM DENTAL CLINIC. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="{{ url_for('privacy') }}">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a href="{{ url_for('terms') }}">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
