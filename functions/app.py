@@ -102,5 +102,5 @@ def contact():
 def gallery():
     return render_template('gallery.html', active_page='gallery')
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
+# Remove the app.run() as it's not needed in a serverless environment
+
