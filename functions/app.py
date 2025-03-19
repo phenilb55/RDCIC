@@ -6,15 +6,18 @@ from flask_lambda import FlaskLambda
 # Set up logging
 logging.basicConfig(level=logging.DEBUG)
 
-# Create Flask app, pointing to correct template and static folders
+# Get the absolute path to the 'RDC-3.1' project root directory
+project_root = os.path.dirname(os.path.abspath(__file__))
+
+# Create Flask app, pointing to the correct template and static folders
 app = FlaskLambda(__name__,
-                  template_folder='templates',  # Template folder path (relative to function directory)
-                  static_folder='static')  # Static folder path (relative to function directory)
+                  template_folder=os.path.join(project_root, '..', 'templates'),  # Adjusted to use the correct path
+                  static_folder=os.path.join(project_root, '..', 'static'))      # Adjusted to use the correct path
 
 # Set a secret key for sessions (if needed)
 app.secret_key = os.environ.get("SESSION_SECRET")
 
-# Routes
+# Routes (your routes remain the same)
 @app.route('/')
 def index():
     return render_template('index.html', active_page='home')

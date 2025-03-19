@@ -1,17 +1,14 @@
 [build]
-  # The directory containing the functions (Flask app in this case)
-  functions = "netlify/functions"
-  
-  # The base directory where your project files are (use an empty string for root directory)
   base = ""
-  
-  # Command to install dependencies
-  command = "pip install -r requirements.txt"
-  
-  # Publish directory for your app (Lambda functions in the "functions" directory)
-  publish = "functions"
+  publish = "/"
+  functions = "functions"
+  command = "pip install -r requirements.txt && python functions/app.py"
+
+[context.production.environment]
+  SESSION_SECRET = "secure-512"
 
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/.netlify/functions/app"
   status = 200
+  force = true
