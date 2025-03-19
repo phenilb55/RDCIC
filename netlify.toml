@@ -1,16 +1,17 @@
-# Netlify configuration file (netlify.toml)
-
 [build]
-  # Set the publish directory to the root of your project.
-  publish = "/"
+  # The directory containing the functions (Flask app in this case)
+  functions = "netlify/functions"
+  
+  # The base directory where your project files are (use an empty string for root directory)
+  base = ""
+  
+  # Command to install dependencies
+  command = "pip install -r requirements.txt"
+  
+  # Publish directory for your app (Lambda functions in the "functions" directory)
+  publish = "functions"
 
-  # Set the build command to run your Flask app.
-  command = "python functions/app.py"
-
-[context.production.environment]
-  # Environment variables specific to production deployment.
-  FLASK_APP = "functions/app.py"
-  FLASK_ENV = "production"
-
-[[plugins]]
-  package = "@netlify/plugin-functions-install-core"
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
