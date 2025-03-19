@@ -1,5 +1,3 @@
-# functions/app.py
-
 import os
 import logging
 from flask import Flask, render_template
@@ -8,8 +6,12 @@ from flask_lambda import FlaskLambda
 # Set up logging
 logging.basicConfig(level=logging.DEBUG)
 
-# Create Flask app
-app = FlaskLambda(__name__)  # FlaskLambda instead of Flask
+# Create Flask app, pointing to correct template and static folders
+app = FlaskLambda(__name__, 
+                  template_folder='../templates',  # Template folder path
+                  static_folder='../static')  # Static folder path
+
+# Set a secret key for sessions (if needed)
 app.secret_key = os.environ.get("SESSION_SECRET")
 
 # Routes
