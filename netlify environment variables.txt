@@ -1,2 +1,0 @@
-key :- SESSION_SECRET
-value :- seure-512
