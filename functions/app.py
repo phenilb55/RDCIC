@@ -7,9 +7,9 @@ from flask_lambda import FlaskLambda
 logging.basicConfig(level=logging.DEBUG)
 
 # Create Flask app, pointing to correct template and static folders
-app = FlaskLambda(__name__, 
-                  template_folder='../templates',  # Template folder path
-                  static_folder='../static')  # Static folder path
+app = FlaskLambda(__name__,
+                  template_folder='templates',  # Template folder path (relative to function directory)
+                  static_folder='static')  # Static folder path (relative to function directory)
 
 # Set a secret key for sessions (if needed)
 app.secret_key = os.environ.get("SESSION_SECRET")
