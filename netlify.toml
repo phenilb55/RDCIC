@@ -1,14 +1,14 @@
-[build] 
-  base = "" 
-  publish = "/static" 
-  functions = "functions" 
-  command = "pip install --quiet -r requirements.txt && python functions/app.py"
+[build]
+  base = ""  # No special base directory, it’s the root directory.
+  publish = "static"  # The directory where static files are located
+  functions = "functions"  # Serverless functions directory
+  command = "pip install --quiet -r requirements.txt && python functions/app.py"  # Command to run
 
 [context.production.environment]
   SESSION_SECRET = "your-secure-key"
 
-[[redirects]] 
-  from = "/*" 
-  to = "/.netlify/functions/app" 
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/app"  # All requests are redirected to the serverless function
   status = 200 
   force = true

@@ -6,10 +6,11 @@ from flask_lambda import FlaskLambda
 # Set up logging
 logging.basicConfig(level=logging.DEBUG)
 
-# Get the absolute path to the 'RDC-3.1' project root directory
-project_root = os.path.dirname(os.path.abspath(__file__))
-
 # Create Flask app, pointing to the correct template and static folders
+# Ensure paths are correct in serverless environment
+project_root = os.path.dirname(os.path.abspath(__file__))  # Get absolute path to the 'RDC-3.1' project root directory
+
+# Use FlaskLambda to set the template and static folders, relative to the project root
 app = FlaskLambda(__name__,
                   template_folder=os.path.join(project_root, '..', 'templates'),  # Adjusted to use the correct path
                   static_folder=os.path.join(project_root, '..', 'static'))      # Adjusted to use the correct path
@@ -103,4 +104,3 @@ def gallery():
     return render_template('gallery.html', active_page='gallery')
 
 # Remove the app.run() as it's not needed in a serverless environment
-
