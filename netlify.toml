@@ -1,0 +1,16 @@
+# Netlify configuration file (netlify.toml)
+
+[build]
+  # Set the publish directory to the root of your project.
+  publish = "/"
+
+  # Set the build command to run your Flask app.
+  command = "python functions/app.py"
+
+[context.production.environment]
+  # Environment variables specific to production deployment.
+  FLASK_APP = "functions/app.py"
+  FLASK_ENV = "production"
+
+[[plugins]]
+  package = "@netlify/plugin-functions-install-core"
