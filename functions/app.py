@@ -1,19 +1,15 @@
 import os
 import logging
-from flask import Flask, render_template
-from flask_lambda import FlaskLambda  # Netlify-compatible Flask wrapper
+from flask import Flask, render_template # type: ignore
+from flask_lambda import FlaskLambda  # type: ignore # Make Flask work with Netlify functions
 
-# Set up logging
 logging.basicConfig(level=logging.DEBUG)
 
-# Create Flask app and wrap it for serverless deployment
 app = FlaskLambda(Flask(__name__),
-                  template_folder=os.path.join(os.path.dirname(__file__), '..', 'templates'),
-                  static_folder=os.path.join(os.path.dirname(__file__), '..', 'static'))
+                  template_folder="templates",
+                  static_folder="static")
 
-# Set a secret key for sessions
 app.secret_key = os.environ.get("SESSION_SECRET", "your-secure-key")
-
 # Routes
 @app.route('/')
 def index():
