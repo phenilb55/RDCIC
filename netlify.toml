@@ -1,13 +1,9 @@
 [build]
-  base = ""  # Root of the project
-  functions = "functions"  # Directory for serverless functions (Flask app)
-  command = "pip install --quiet -r requirements.txt"  # Install dependencies
-
-[context.production.environment]
-  SESSION_SECRET = "your-secure-key"  # Secure session key (change this for production)
+  base = "rdcic"
+  functions = "rdcic/functions"
+  command = "pip install --quiet -r requirements.txt"
 
 [[redirects]]
   from = "/*"
-  to = "/.netlify/functions/app"  # Redirect all requests to the Flask serverless function
+  to = "/.netlify/functions/app"
   status = 200
-  force = true
