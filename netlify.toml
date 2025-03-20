@@ -1,14 +1,14 @@
 [build]
-  base = ""  # No special base directory, it’s the root directory.
-  publish = "static"  # The directory where static files are located
-  functions = "functions"  # Serverless functions directory
-  command = "pip install --quiet -r requirements.txt && python functions/app.py"  # Command to run
+  base = ""  # No special base directory; it's the root of the project
+  publish = "static"  # Directory for static files (images, CSS, JS, etc.)
+  functions = "functions"  # Directory for serverless functions (your Flask app)
+  command = "pip install --quiet -r requirements.txt && netlify-lambda build functions"  # Build command for Netlify
 
 [context.production.environment]
-  SESSION_SECRET = "your-secure-key"
+  SESSION_SECRET = "your-secure-key"  # Secure session key (change this for security in production)
 
 [[redirects]]
   from = "/*"
-  to = "/.netlify/functions/app"  # All requests are redirected to the serverless function
-  status = 200 
-  force = true
+  to = "/.netlify/functions/app"  # Redirect all requests to your Flask serverless function
+  status = 200  # HTTP status code for the redirect
+  force = true  # Make sure the redirect happens for all routes

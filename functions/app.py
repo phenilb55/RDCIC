@@ -1,7 +1,7 @@
 import os
 import logging
 from flask import Flask, render_template
-from flask_lambda import FlaskLambda
+from netlify_functions import handler  # Netlify helper to integrate Flask with serverless
 
 # Set up logging
 logging.basicConfig(level=logging.DEBUG)
@@ -10,13 +10,13 @@ logging.basicConfig(level=logging.DEBUG)
 # Ensure paths are correct in serverless environment
 project_root = os.path.dirname(os.path.abspath(__file__))  # Get absolute path to the 'RDC-3.1' project root directory
 
-# Use FlaskLambda to set the template and static folders, relative to the project root
-app = FlaskLambda(__name__,
-                  template_folder=os.path.join(project_root, '..', 'templates'),  # Adjusted to use the correct path
-                  static_folder=os.path.join(project_root, '..', 'static'))      # Adjusted to use the correct path
+# Create Flask app with correct template and static folder paths
+app = Flask(__name__,
+            template_folder=os.path.join(project_root, '..', 'templates'),  # Path to templates
+            static_folder=os.path.join(project_root, '..', 'static'))      # Path to static files
 
 # Set a secret key for sessions (if needed)
-app.secret_key = os.environ.get("SESSION_SECRET")
+app.secret_key = os.environ.get("SESSION_SECRET", "your-secure-key")  # Add default if not set
 
 # Routes (your routes remain the same)
 @app.route('/')
@@ -33,7 +33,7 @@ def about():
 
 @app.route('/team')
 def team():
-    return render_template('team.html', active_page='about')
+    return render_template('team.html', active_page='team')
 
 @app.route('/social-services')
 def social_services():
@@ -103,4 +103,5 @@ def contact():
 def gallery():
     return render_template('gallery.html', active_page='gallery')
 
-# Remove the app.run() as it's not needed in a serverless environment
+# This tells Netlify to handle the Flask app as a serverless function
+handler(app)
