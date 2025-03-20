@@ -1,0 +1,151 @@
+{% extends 'base.html' %}
+
+{% block title %}Invisible Aligners - RAM DENTAL CLINIC{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Invisible Aligners</h1>
+                <p class="lead">Straighten your teeth discreetly with clear aligners</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Treatment Overview -->
+<section class="treatment-overview py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <img src="{{ url_for('static', filename='images/invisible-aligners.svg') }}" alt="Invisible Aligners" class="img-fluid">
+            </div>
+            <div class="col-lg-6">
+                <h2>Transform Your Smile Invisibly</h2>
+                <p>Invisible aligners are a modern orthodontic solution that straightens your teeth without traditional metal braces. These clear, removable aligners are custom-made to gradually shift your teeth into their proper position.</p>
+                
+                <h3 class="mt-4">Benefits of Invisible Aligners</h3>
+                <ul class="benefits-list">
+                    <li>Nearly invisible appearance</li>
+                    <li>Removable for eating and cleaning</li>
+                    <li>Comfortable to wear</li>
+                    <li>No dietary restrictions</li>
+                    <li>Fewer dental visits required</li>
+                    <li>Predictable results</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Treatment Process -->
+<section class="treatment-process py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">The Invisible Aligner Process</h2>
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h4>Consultation</h4>
+                    <p>Initial examination and discussion of your smile goals</p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h4>Digital Scanning</h4>
+                    <p>3D scanning of your teeth for custom aligner creation</p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h4>Treatment Plan</h4>
+                    <p>Custom treatment plan showing projected results</p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h4>Active Treatment</h4>
+                    <p>Wearing aligners and tracking progress</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Ideal Candidates -->
+<section class="ideal-candidates py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Is This Treatment Right for You?</h2>
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <div class="candidate-card">
+                    <h4>Ideal For:</h4>
+                    <ul>
+                        <li>Mild to moderate crowding</li>
+                        <li>Gaps between teeth</li>
+                        <li>Minor bite issues</li>
+                        <li>Adults and teens</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="candidate-card">
+                    <h4>May Not Be Suitable For:</h4>
+                    <ul>
+                        <li>Severe misalignment</li>
+                        <li>Complex bite problems</li>
+                        <li>Major jaw issues</li>
+                        <li>Young children</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQs -->
+<section class="faqs py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="accordion" id="alignerFAQ">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                How long does the treatment take?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#alignerFAQ">
+                            <div class="accordion-body">
+                                Treatment duration varies depending on individual cases but typically ranges from 6 to 18 months. The exact timeline will be determined during your consultation.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more FAQ items as needed -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="cta-section py-5 bg-primary text-white">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 mb-4 mb-lg-0">
+                <h2>Ready for a Straighter Smile?</h2>
+                <p class="lead mb-0">Schedule your consultation to learn if invisible aligners are right for you.</p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+                <a href="{{ url_for('contact') }}#appointment-form" class="btn btn-light btn-lg">Book Consultation</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

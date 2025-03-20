@@ -101,8 +101,12 @@ def wisdom_tooth_extraction():
 
 @app.route('/services/root-canal-treatment')
 def root_canal_treatment():
-    return render_template('services/root_canal-treatment.html', active_page='services')
+    return render_template('services/root-canal-treatment.html', active_page='services')
 
 # ✅ Export for Render to use
 def handler(event, context):
     return app(event, context)
+
+# ✅ Run Flask locally (This is the missing part!)
+if __name__ == '__main__':
+    app.run(debug=True)
