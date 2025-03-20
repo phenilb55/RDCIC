@@ -2,7 +2,7 @@
   base = ""  # No special base directory; it's the root of the project
   publish = "static"  # Directory for static files (images, CSS, JS, etc.)
   functions = "functions"  # Directory for serverless functions (your Flask app)
-  command = "pip install --quiet -r requirements.txt && netlify-lambda build functions"  # Build command for Netlify
+  command = "pip install --quiet -r requirements.txt"
 
 [context.production.environment]
   SESSION_SECRET = "your-secure-key"  # Secure session key (change this for security in production)

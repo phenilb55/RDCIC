@@ -1,24 +1,20 @@
 import os
 import logging
 from flask import Flask, render_template
-from netlify_functions import handler  # Netlify helper to integrate Flask with serverless
+from flask_lambda import FlaskLambda  # Netlify-compatible Flask wrapper
 
 # Set up logging
 logging.basicConfig(level=logging.DEBUG)
 
-# Create Flask app, pointing to the correct template and static folders
-# Ensure paths are correct in serverless environment
-project_root = os.path.dirname(os.path.abspath(__file__))  # Get absolute path to the 'RDC-3.1' project root directory
+# Create Flask app and wrap it for serverless deployment
+app = FlaskLambda(Flask(__name__),
+                  template_folder=os.path.join(os.path.dirname(__file__), '..', 'templates'),
+                  static_folder=os.path.join(os.path.dirname(__file__), '..', 'static'))
 
-# Create Flask app with correct template and static folder paths
-app = Flask(__name__,
-            template_folder=os.path.join(project_root, '..', 'templates'),  # Path to templates
-            static_folder=os.path.join(project_root, '..', 'static'))      # Path to static files
+# Set a secret key for sessions
+app.secret_key = os.environ.get("SESSION_SECRET", "your-secure-key")
 
-# Set a secret key for sessions (if needed)
-app.secret_key = os.environ.get("SESSION_SECRET", "your-secure-key")  # Add default if not set
-
-# Routes (your routes remain the same)
+# Routes
 @app.route('/')
 def index():
     return render_template('index.html', active_page='home')
@@ -103,5 +99,4 @@ def contact():
 def gallery():
     return render_template('gallery.html', active_page='gallery')
 
-# This tells Netlify to handle the Flask app as a serverless function
-handler(app)
+# No need for a separate handler function since FlaskLambda does this automatically
