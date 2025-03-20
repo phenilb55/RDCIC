@@ -1,5 +1,5 @@
 [build]
-  functions = "functions"  # Do not include "rdcic/functions"
+  functions = "functions"  # Remove "rdcic/functions", just use "functions"
   command = "pip install --quiet -r requirements.txt"
 
 [[redirects]]
