@@ -1,0 +1,863 @@
+/* Overwrite heading styles to remove blue lines */
+h2:after,
+.section-title:after,
+.heading-with-line:after,
+.feature-title:after,
+.service-title:after,
+.card-title:after {
+    display: none !important;
+}
+
+h2, 
+.section-title,
+.heading-with-line,
+.feature-title,
+.service-title,
+.card-title {
+    position: relative;
+    margin-bottom: 1.5rem;
+    border: none !important;
+}
+
+/* 
+ * Smile Bright Dental - Custom CSS
+ * A clean, professional theme for a dental practice
+ */
+
+/* ---------- Global Styles ---------- */
+:root {
+    --primary-color: #57b0f6;      /* Primary blue */
+    --primary-dark: #4291d1;       /* Darker blue for hover states */
+    --secondary-color: #6dc993;    /* Secondary green */
+    --accent-color: #f5a623;       /* Accent orange for highlights */
+    --light-bg: #f0f8ff;           /* Light background */
+    --text-color: #333333;         /* Main text color */
+    --light-text: #ffffff;         /* Light text color */
+    --gray-text: #666666;          /* Secondary text color */
+    --border-color: #e9ecef;       /* Border color */
+    --light-border: #f0f0f0;       /* Lighter border color */
+    --footer-bg: #303841;          /* Footer background */
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Standard shadow */
+    --content-width: 1200px;       /* Max content width */
+}
+
+/* Reset for better mobile rendering */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px; /* Base font size fixed */
+    -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape */
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--text-color);
+    background-color: #ffffff;
+    line-height: 1.6;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+/*h2:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    width: 60px;
+    background-color: var(--primary-color);
+    margin: 0 auto;
+}*/
+
+.text-center h2:after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.text-start h2:after {
+    margin-left: 0;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: var(--gray-text);
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: var(--gray-text);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary-dark);
+    text-decoration: none;
+}
+
+.btn {
+    border-radius: 30px;
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--light-text);
+}
+
+.bg-light {
+    background-color: var(--light-bg) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+/* ---------- Navigation ---------- */
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.brand-text {
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--text-color);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    margin-left: 0.25rem;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--primary-color);
+}
+
+.appointment-btn {
+    margin-top: 0.5rem;
+}
+
+/* ---------- Page Headers ---------- */
+.page-header {
+    background-color: var(--light-bg);
+    padding: 80px 0;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.page-header h1 {
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+/* ---------- Hero Section ---------- */
+.hero-section {
+    padding: 6rem 0;
+    background-color: var(--light-bg);
+    margin-bottom: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.hero-image {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* ---------- Features Section ---------- */
+.feature-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+    border: 1px solid var(--light-border);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.icon-wrapper {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-bg);
+    border-radius: 50%;
+    margin: 0 auto;
+    color: var(--primary-color);
+}
+
+.icon-wrapper i {
+    font-size: 30px;
+}
+
+/* ---------- Services Overview ---------- */
+.service-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+    border: 1px solid var(--light-border);
+    text-align: center;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-bg);
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    color: var(--primary-color);
+}
+
+.service-icon i {
+    font-size: 24px;
+}
+
+/* ---------- Testimonials ---------- */
+.testimonial-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+    border: 1px solid var(--light-border);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.rating {
+    color: var(--accent-color);
+}
+
+.testimonial-author {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+}
+
+.testimonial-author h5 {
+    margin-bottom: 0.25rem;
+}
+
+/* ---------- CTA Section ---------- */
+.cta-section {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    padding: 3rem 0;
+}
+
+.cta-section h2 {
+    color: var(--light-text);
+}
+
+.cta-section h2:after {
+    background-color: var(--light-text);
+}
+
+/* ---------- Service Detail Pages ---------- */
+.service-detail {
+    padding: 4rem 0;
+}
+
+.service-list {
+    padding-left: 20px;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.service-list li {
+    margin-bottom: 0.75rem;
+    position: relative;
+    padding-left: 10px;
+}
+
+.service-list li:before {
+    content: "•";
+    color: var(--primary-color);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* ---------- About Page ---------- */
+.clinic-intro,
+.meet-dentist {
+    padding: 4rem 0;
+}
+
+.dentist-image {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.approach-card {
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+    border: 1px solid var(--light-border);
+}
+
+.approach-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-bg);
+    border-radius: 50%;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    font-size: 24px;
+}
+
+.team-member {
+    text-align: center;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.team-image {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.office-image {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.feature i {
+    color: var(--primary-color);
+}
+
+/* ---------- Contact Page ---------- */
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.contact-item i {
+    font-size: 24px;
+    color: var(--primary-color);
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+.contact-text h5 {
+    margin-bottom: 5px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--light-bg);
+    border-radius: 50%;
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    transform: translateY(-3px);
+}
+
+.map-container {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.emergency-list li {
+    margin-bottom: 1rem;
+}
+
+/* ---------- Gallery Page ---------- */
+.gallery-item {
+    margin-bottom: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-image {
+    position: relative;
+    height: 0;
+    padding-bottom: 75%; /* 4:3 aspect ratio */
+    background-color: var(--light-bg);
+    overflow: hidden;
+}
+
+.gallery-image svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-caption {
+    padding: 15px;
+    background-color: #ffffff;
+    border-top: 1px solid var(--light-border);
+}
+
+.gallery-caption h5 {
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.testimonial-single {
+    padding: 30px;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.patient-info {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--light-border);
+}
+
+.patient-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    overflow: hidden;
+    background-color: var(--light-bg);
+}
+
+.patient-details {
+    flex: 1;
+}
+
+.patient-details h5 {
+    margin-bottom: 0;
+}
+
+.star-rating {
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+    background-color: var(--footer-bg);
+    color: #ffffff;
+}
+
+.footer h5 {
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.footer p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.social-icons {
+    margin-top: 1.5rem;
+}
+
+.hours-list li, 
+.contact-info li {
+    margin-bottom: 0.75rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.hours-list span {
+    color: #ffffff;
+    font-weight: 500;
+    margin-right: 0.5rem;
+}
+
+.footer .list-inline-item:not(:last-child) {
+    margin-right: 1.5rem;
+}
+
+.footer a {
+    color: rgba(255, 255, 255, 0.7);
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #ffffff;
+}
+
+/* Fix for all zoom levels */
+.container {
+    width: 100%;
+    max-width: var(--content-width);
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+}
+
+/* Optimize images for UHD/4K */
+img, svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center images */
+}
+
+/* Improve image quality and display */
+.hero-image img, 
+.service-image img, 
+.gallery-image img,
+.hero-image svg, 
+.service-image svg, 
+.gallery-image svg {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Ensure the entire image is visible */
+    transition: transform 0.3s ease;
+    border-radius: 10px; /* Rounded corners for images */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+}
+
+/* Image container styles */
+.service-image {
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: var(--light-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* Add fade-in animation for images */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+/* Fix for Safari and mobile browsers */
+@supports (-webkit-overflow-scrolling: touch) {
+    .container {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    
+    body {
+        -webkit-text-size-adjust: 100%;
+    }
+}
+
+/* Ensure images display at correct size regardless of zoom level */
+@media screen and (min-width: 992px) {
+    .service-image img,
+    .service-image svg {
+        max-height: 400px; /* Control maximum height on larger screens */
+    }
+}
+
+/* Maintain aspect ratio on smaller screens */
+@media screen and (max-width: 991px) {
+    .service-image img,
+    .service-image svg {
+        max-height: 300px; /* Control maximum height on smaller screens */
+    }
+}
+
+/* High-quality images hover effect */
+.gallery-item:hover .gallery-image img,
+.gallery-item:hover .gallery-image svg {
+    transform: scale(1.05);
+}
+
+/* Smooth animations */
+a, button, .btn, .feature-card, .service-card, .gallery-item, .team-member {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* ---------- Responsive Adjustments ---------- */
+@media (max-width: 1199.98px) {
+    :root {
+        --content-width: 960px;
+    }
+    
+    .container {
+        max-width: var(--content-width);
+    }
+}
+
+@media (max-width: 991.98px) {
+    :root {
+        --content-width: 720px;
+    }
+    
+    .hero-section {
+        padding: 4rem 0;
+    }
+    
+    .navbar-collapse {
+        background-color: #ffffff;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: var(--shadow);
+        margin-top: 1rem;
+        z-index: 1000;
+    }
+    
+    .appointment-btn {
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .hero-image {
+        margin-top: 2rem;
+    }
+    
+    .feature-card, .service-card, .testimonial-card {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    :root {
+        --content-width: 540px;
+    }
+    
+    html {
+        font-size: 15px; /* Slightly reduced for better mobile layout */
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-section {
+        padding: 3rem 0;
+    }
+    
+    .page-header {
+        padding: 60px 0;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+    
+    .lead {
+        font-size: 1.1rem;
+    }
+    
+    .service-detail {
+        padding: 3rem 0;
+    }
+    
+    .footer {
+        text-align: center;
+    }
+    
+    .footer h5:after {
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+    }
+}
+
+@media (max-width: 575.98px) {
+    :root {
+        --content-width: 100%;
+    }
+    
+    html {
+        font-size: 14px; /* Further reduced for small screens */
+    }
+    
+    .container {
+        padding-right: 1.25rem;
+        padding-left: 1.25rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.75rem;
+    }
+    
+    .hero-section {
+        padding: 2rem 0;
+    }
+    
+    .page-header {
+        padding: 40px 0;
+    }
+    
+    .btn {
+        padding: 0.5rem 1.25rem;
+        font-size: 0.9rem;
+    }
+    
+    .contact-item {
+        flex-direction: column;
+    }
+    
+    .contact-item i {
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Additional styles for better heading visibility without lines */
+h2, .section-title {
+    color: #1a1a1a;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.lead {
+    color: var(--gray-text);
+    margin-bottom: 2rem;
+}
+
+/* Enhance section spacing */
+section {
+    padding: 4rem 0;
+}
+
+/* Add subtle shadow to cards instead of lines */
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: none !important;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}

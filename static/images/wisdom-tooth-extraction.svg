@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f8ff" />
+      <stop offset="100%" stop-color="#e6f3ff" />
+    </linearGradient>
+    
+    <!-- Shadow filter -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="10" flood-color="#57b0f6" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- Background rectangle -->
+  <rect width="1920" height="1080" fill="url(#bgGradient)" />
+  
+  <!-- Main Tooth Group -->
+  <g transform="translate(960, 540)" filter="url(#shadow)">
+    <!-- Wisdom tooth -->
+    <path d="M-100,-200 Q-50,-250 0,-250 Q50,-250 100,-200 
+             Q150,-150 150,-50 Q150,50 100,150 
+             Q50,200 0,180 Q-50,200 -100,150 
+             Q-150,50 -150,-50 Q-150,-150 -100,-200 Z" 
+          fill="#ffffff" 
+          stroke="#57b0f6" 
+          stroke-width="5" />
+    
+    <!-- Tooth roots -->
+    <path d="M-70,0 L-90,250" fill="none" stroke="#57b0f6" stroke-width="4" stroke-linecap="round" />
+    <path d="M0,0 L0,280" fill="none" stroke="#57b0f6" stroke-width="4" stroke-linecap="round" />
+    <path d="M70,0 L90,250" fill="none" stroke="#57b0f6" stroke-width="4" stroke-linecap="round" />
+    
+    <!-- Impacted position -->
+    <path d="M160,-100 L250,-50" stroke="#57b0f6" stroke-width="3" stroke-dasharray="8,5" />
+    <circle cx="250" cy="-50" r="15" fill="#57b0f6" />
+    
+    <!-- Extraction motion indicators -->
+    <path d="M-120,-150 L-180,-200" stroke="#57b0f6" stroke-width="3" stroke-dasharray="8,5" />
+    <path d="M-180,-200 L-190,-210 L-170,-220" fill="none" stroke="#57b0f6" stroke-width="3" />
+    
+    <!-- Gumline indicator -->
+    <path d="M-200,-50 Q-100,-80 0,-80 Q100,-80 200,-50" 
+          fill="none" 
+          stroke="#ff9999" 
+          stroke-width="4" 
+          stroke-opacity="0.6" 
+          stroke-dasharray="10,5" />
+    
+    <!-- Bone line indicator -->
+    <path d="M-250,0 Q-150,-30 0,-30 Q150,-30 250,0" 
+          fill="none" 
+          stroke="#e0e0e0" 
+          stroke-width="5" 
+          stroke-opacity="0.5" />
+  </g>
+  
+  <!-- Dental instruments -->
+  <g transform="translate(1400, 350)">
+    <!-- Extraction forceps -->
+    <path d="M0,0 L-50,50 L-60,150 L-40,180 L-20,150 L-30,50 Z" fill="#e0e0e0" stroke="#999999" stroke-width="2" />
+    <path d="M-40,180 L-80,240 L-60,260 L-20,200 Z" fill="#cccccc" stroke="#999999" stroke-width="2" />
+    <path d="M-60,260 L-100,240 L-120,250 L-70,280 Z" fill="#cccccc" stroke="#999999" stroke-width="1.5" />
+  </g>
+  
+  <!-- Advanced procedure visualization -->
+  <g transform="translate(450, 350)">
+    <!-- X-ray visualization -->
+    <rect x="-150" y="-200" width="300" height="400" rx="10" fill="#111111" fill-opacity="0.1" stroke="#57b0f6" stroke-width="2" />
+    
+    <!-- X-ray tooth -->
+    <path d="M-70,-100 Q-35,-150 0,-150 Q35,-150 70,-100 
+             Q100,-50 100,50 Q100,100 70,150 
+             Q35,170 0,160 Q-35,170 -70,150 
+             Q-100,100 -100,50 Q-100,-50 -70,-100 Z" 
+          fill="none" 
+          stroke="#ffffff" 
+          stroke-width="3" 
+          stroke-opacity="0.6" />
+    
+    <!-- X-ray roots -->
+    <path d="M-40,50 L-50,150" fill="none" stroke="#ffffff" stroke-width="2" stroke-opacity="0.6" />
+    <path d="M0,50 L0,160" fill="none" stroke="#ffffff" stroke-width="2" stroke-opacity="0.6" />
+    <path d="M40,50 L50,150" fill="none" stroke="#ffffff" stroke-width="2" stroke-opacity="0.6" />
+    
+    <!-- X-ray bone indicator -->
+    <path d="M-120,0 L120,0" stroke="#ffffff" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="5,5" />
+  </g>
+  
+  <!-- Info text sections -->
+  <g font-family="Arial, sans-serif">
+    <!-- Title -->
+    <text x="960" y="170" font-size="48" text-anchor="middle" fill="#57b0f6" font-weight="bold">
+      Wisdom Tooth Extraction
+    </text>
+    
+    <!-- Subtitle -->
+    <text x="960" y="230" font-size="30" text-anchor="middle" fill="#666666">
+      Safe and Comfortable Removal of Third Molars
+    </text>
+    
+    <!-- Info points -->
+    <g transform="translate(550, 900)" fill="#57b0f6">
+      <circle cx="0" cy="0" r="15" />
+      <text x="30" y="5" font-size="24" fill="#333333">Minimally Invasive Techniques</text>
+    </g>
+    
+    <g transform="translate(1000, 900)" fill="#57b0f6">
+      <circle cx="0" cy="0" r="15" />
+      <text x="30" y="5" font-size="24" fill="#333333">Advanced Sedation Options</text>
+    </g>
+    
+    <g transform="translate(1400, 900)" fill="#57b0f6">
+      <circle cx="0" cy="0" r="15" />
+      <text x="30" y="5" font-size="24" fill="#333333">Precision Imaging</text>
+    </g>
+  </g>
+  
+  <!-- Animation effects -->
+  <g>
+    <circle cx="960" cy="540" r="400" fill="none" stroke="#57b0f6" stroke-width="2" opacity="0.1">
+      <animate attributeName="r" values="400;420;400" dur="5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.1;0.2;0.1" dur="5s" repeatCount="indefinite" />
+    </circle>
+  </g>
+</svg>

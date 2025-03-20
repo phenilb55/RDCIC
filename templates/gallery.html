@@ -1,0 +1,668 @@
+{% extends 'base.html' %}
+
+{% block title %}Gallery & Testimonials - RAM DENTAL CLINIC{% endblock %}
+
+{% block content %}
+<!-- Gallery Hero Section -->
+<section class="page-header gallery-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Our Gallery & Testimonials</h1>
+                <p class="lead">See our work and what our patients have to say</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Introduction -->
+<section class="gallery-intro py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <p>Welcome to our gallery, where you can see examples of our dental work and get a feel for our practice. 
+                We take pride in creating beautiful, healthy smiles for our patients. Browse through before-and-after 
+                transformations, our modern facility, and testimonials from our satisfied patients.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Filter -->
+<section class="gallery-filter-section py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="gallery-filter-buttons">
+                    <button class="btn btn-outline-primary me-2 mb-2 gallery-filter active" data-filter="all">All</button>
+                    <button class="btn btn-outline-primary me-2 mb-2 gallery-filter" data-filter="before-after">Before & After</button>
+                    <button class="btn btn-outline-primary me-2 mb-2 gallery-filter" data-filter="smile-makeovers">Smile Makeovers</button>
+                    <button class="btn btn-outline-primary me-2 mb-2 gallery-filter" data-filter="clinic">Our Clinic</button>
+                    <button class="btn btn-outline-primary mb-2 gallery-filter" data-filter="team">Our Team</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Grid -->
+<section class="gallery-grid py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Before & After 1 -->
+            <div class="col-md-6 col-lg-4 gallery-item before-after">
+                <div class="card h-100">
+                    <div class="gallery-image">
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="#f0f8ff"/>
+                            <rect x="10" y="10" width="185" height="280" rx="5" fill="#e6f0ff" stroke="#57b0f6" stroke-width="2"/>
+                            <rect x="205" y="10" width="185" height="280" rx="5" fill="#e6f0ff" stroke="#57b0f6" stroke-width="2"/>
+                            <text x="102.5" y="30" font-size="14" text-anchor="middle" fill="#333">Before</text>
+                            <text x="297.5" y="30" font-size="14" text-anchor="middle" fill="#333">After</text>
+                            
+                            <!-- Before teeth -->
+                            <path d="M50,150 Q102.5,180 155,150" fill="none" stroke="#ccc" stroke-width="2"/>
+                            <rect x="60" y="120" width="20" height="30" fill="#f8f8f8" stroke="#ccc"/>
+                            <rect x="85" y="115" width="20" height="35" fill="#f8f8f8" stroke="#ccc"/>
+                            <rect x="110" y="115" width="20" height="35" fill="#eee" stroke="#ccc"/>
+                            <rect x="135" y="120" width="20" height="30" fill="#f8f8f8" stroke="#ccc"/>
+                            
+                            <!-- After teeth -->
+                            <path d="M245,150 Q297.5,180 350,150" fill="none" stroke="#57b0f6" stroke-width="2"/>
+                            <rect x="255" y="120" width="20" height="30" fill="#fff" stroke="#57b0f6"/>
+                            <rect x="280" y="115" width="20" height="35" fill="#fff" stroke="#57b0f6"/>
+                            <rect x="305" y="115" width="20" height="35" fill="#fff" stroke="#57b0f6"/>
+                            <rect x="330" y="120" width="20" height="30" fill="#fff" stroke="#57b0f6"/>
+                        </svg>
+                    </div>
+                    <div class="gallery-caption">
+                        <h5>Teeth Whitening</h5>
+                        <p>Professional whitening treatment</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Before & After 2 -->
+            <div class="col-md-6 col-lg-4 gallery-item before-after smile-makeovers">
+                <div class="card h-100">
+                    <div class="gallery-image">
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="#f0f8ff"/>
+                            <rect x="10" y="10" width="185" height="280" rx="5" fill="#e6f0ff" stroke="#57b0f6" stroke-width="2"/>
+                            <rect x="205" y="10" width="185" height="280" rx="5" fill="#e6f0ff" stroke="#57b0f6" stroke-width="2"/>
+                            <text x="102.5" y="30" font-size="14" text-anchor="middle" fill="#333">Before</text>
+                            <text x="297.5" y="30" font-size="14" text-anchor="middle" fill="#333">After</text>
+                            
+                            <!-- Before teeth -->
+                            <path d="M50,150 Q102.5,180 155,150" fill="none" stroke="#ccc" stroke-width="2"/>
+                            <rect x="60" y="120" width="20" height="30" fill="#f8f8f8" stroke="#ccc" transform="rotate(-5, 70, 135)"/>
+                            <rect x="85" y="115" width="20" height="35" fill="#f8f8f8" stroke="#ccc" transform="rotate(8, 95, 132.5)"/>
+                            <rect x="110" y="115" width="20" height="35" fill="#eee" stroke="#ccc" transform="rotate(-7, 120, 132.5)"/>
+                            <rect x="135" y="120" width="20" height="30" fill="#f8f8f8" stroke="#ccc" transform="rotate(5, 145, 135)"/>
+                            
+                            <!-- After teeth -->
+                            <path d="M245,150 Q297.5,180 350,150" fill="none" stroke="#57b0f6" stroke-width="2"/>
+                            <rect x="255" y="120" width="20" height="30" fill="#fff" stroke="#57b0f6"/>
+                            <rect x="280" y="115" width="20" height="35" fill="#fff" stroke="#57b0f6"/>
+                            <rect x="305" y="115" width="20" height="35" fill="#fff" stroke="#57b0f6"/>
+                            <rect x="330" y="120" width="20" height="30" fill="#fff" stroke="#57b0f6"/>
+                        </svg>
+                    </div>
+                    <div class="gallery-caption">
+                        <h5>Invisalign Treatment</h5>
+                        <p>Teeth straightening results</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Before & After 3 -->
+            <div class="col-md-6 col-lg-4 gallery-item before-after smile-makeovers">
+                <div class="card h-100">
+                    <div class="gallery-image">
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="#f0f8ff"/>
+                            <rect x="10" y="10" width="185" height="280" rx="5" fill="#e6f0ff" stroke="#57b0f6" stroke-width="2"/>
+                            <rect x="205" y="10" width="185" height="280" rx="5" fill="#e6f0ff" stroke="#57b0f6" stroke-width="2"/>
+                            <text x="102.5" y="30" font-size="14" text-anchor="middle" fill="#333">Before</text>
+                            <text x="297.5" y="30" font-size="14" text-anchor="middle" fill="#333">After</text>
+                            
+                            <!-- Before teeth -->
+                            <path d="M50,150 Q102.5,180 155,150" fill="none" stroke="#ccc" stroke-width="2"/>
+                            <rect x="70" y="120" width="20" height="30" fill="#f8f8f8" stroke="#ccc"/>
+                            <rect x="95" y="115" width="20" height="35" fill="#ddd" stroke="#ccc"/>
+                            <rect x="120" y="115" width="20" height="35" fill="#f8f8f8" stroke="#ccc"/>
+                            
+                            <!-- After teeth -->
+                            <path d="M245,150 Q297.5,180 350,150" fill="none" stroke="#57b0f6" stroke-width="2"/>
+                            <rect x="255" y="120" width="20" height="30" fill="#fff" stroke="#57b0f6"/>
+                            <rect x="280" y="115" width="20" height="35" fill="#fff" stroke="#57b0f6"/>
+                            <rect x="305" y="115" width="20" height="35" fill="#fff" stroke="#57b0f6"/>
+                            <rect x="330" y="120" width="20" height="30" fill="#fff" stroke="#57b0f6"/>
+                        </svg>
+                    </div>
+                    <div class="gallery-caption">
+                        <h5>Dental Implant</h5>
+                        <p>Replacing missing teeth</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Clinic 1 -->
+            <div class="col-md-6 col-lg-4 gallery-item clinic">
+                <div class="card h-100">
+                    <div class="gallery-image">
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="#f0f8ff"/>
+                            <rect x="25" y="25" width="350" height="250" rx="5" fill="#ffffff" stroke="#57b0f6" stroke-width="2"/>
+                            
+                            <!-- Reception desk -->
+                            <rect x="50" y="150" width="120" height="60" fill="#57b0f6" opacity="0.7"/>
+                            <rect x="50" y="140" width="120" height="10" fill="#57b0f6"/>
+                            
+                            <!-- Seating area -->
+                            <rect x="200" y="150" width="30" height="30" rx="5" fill="#57b0f6" opacity="0.5"/>
+                            <rect x="240" y="150" width="30" height="30" rx="5" fill="#57b0f6" opacity="0.5"/>
+                            <rect x="280" y="150" width="30" height="30" rx="5" fill="#57b0f6" opacity="0.5"/>
+                            
+                            <!-- Plants -->
+                            <rect x="325" y="130" width="20" height="50" fill="#6dc993" opacity="0.7"/>
+                            <circle cx="335" cy="120" r="15" fill="#6dc993" opacity="0.7"/>
+                            
+                            <!-- Wall art -->
+                            <rect x="80" y="60" width="60" height="40" fill="#f5a623" opacity="0.3"/>
+                            <rect x="260" y="60" width="60" height="40" fill="#f5a623" opacity="0.3"/>
+                            
+                            <!-- Floor -->
+                            <rect x="25" y="200" width="350" height="75" fill="#f0f0f0"/>
+                            <line x1="25" y1="210" x2="375" y2="210" stroke="#e0e0e0" stroke-width="1"/>
+                            <line x1="25" y1="220" x2="375" y2="220" stroke="#e0e0e0" stroke-width="1"/>
+                            <line x1="25" y1="230" x2="375" y2="230" stroke="#e0e0e0" stroke-width="1"/>
+                            <line x1="25" y1="240" x2="375" y2="240" stroke="#e0e0e0" stroke-width="1"/>
+                            <line x1="25" y1="250" x2="375" y2="250" stroke="#e0e0e0" stroke-width="1"/>
+                            <line x1="25" y1="260" x2="375" y2="260" stroke="#e0e0e0" stroke-width="1"/>
+                            <line x1="25" y1="270" x2="375" y2="270" stroke="#e0e0e0" stroke-width="1"/>
+                        </svg>
+                    </div>
+                    <div class="gallery-caption">
+                        <h5>Reception Area</h5>
+                        <p>Welcoming and comfortable waiting room</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Clinic 2 -->
+            <div class="col-md-6 col-lg-4 gallery-item clinic">
+                <div class="card h-100">
+                    <div class="gallery-image">
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="#f0f8ff"/>
+                            <rect x="25" y="25" width="350" height="250" rx="5" fill="#ffffff" stroke="#57b0f6" stroke-width="2"/>
+                            
+                            <!-- Dental chair -->
+                            <rect x="150" y="100" width="100" height="150" rx="10" fill="#57b0f6" opacity="0.5"/>
+                            <rect x="170" y="110" width="60" height="80" rx="5" fill="#ffffff"/>
+                            <rect x="180" y="200" width="40" height="40" rx="5" fill="#ffffff"/>
+                            
+                            <!-- Equipment -->
+                            <rect x="280" y="120" width="40" height="120" fill="#f0f0f0" stroke="#cccccc"/>
+                            <circle cx="300" cy="150" r="10" fill="#57b0f6"/>
+                            <circle cx="300" cy="180" r="10" fill="#57b0f6"/>
+                            <rect x="290" y="200" width="20" height="10" fill="#57b0f6"/>
+                            
+                            <!-- Side table -->
+                            <rect x="80" y="150" width="40" height="60" fill="#f0f0f0" stroke="#cccccc"/>
+                            <circle cx="100" cy="140" r="15" fill="#57b0f6" opacity="0.7"/>
+                            
+                            <!-- Light -->
+                            <line x1="200" y1="25" x2="200" y2="80" stroke="#cccccc" stroke-width="2"/>
+                            <circle cx="200" cy="90" r="20" fill="#f5a623" opacity="0.3"/>
+                            
+                            <!-- Window -->
+                            <rect x="50" y="40" width="60" height="80" fill="#d6eaff" stroke="#57b0f6" stroke-width="1"/>
+                            <line x1="80" y1="40" x2="80" y2="120" stroke="#57b0f6" stroke-width="1"/>
+                            <line x1="50" y1="80" x2="110" y2="80" stroke="#57b0f6" stroke-width="1"/>
+                        </svg>
+                    </div>
+                    <div class="gallery-caption">
+                        <h5>Treatment Room</h5>
+                        <p>Modern and comfortable treatment area</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Team 1 -->
+            <div class="col-md-6 col-lg-4 gallery-item team">
+                <div class="card h-100">
+                    <div class="gallery-image">
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="#f0f8ff"/>
+                            
+                            <!-- Background -->
+                            <rect x="25" y="25" width="350" height="250" rx="5" fill="#ffffff" stroke="#57b0f6" stroke-width="2"/>
+                            
+                            <!-- Team members -->
+                            <circle cx="100" cy="120" r="40" fill="#57b0f6" opacity="0.5"/>
+                            <circle cx="200" cy="120" r="40" fill="#57b0f6" opacity="0.5"/>
+                            <circle cx="300" cy="120" r="40" fill="#57b0f6" opacity="0.5"/>
+                            
+                            <!-- Simplified faces -->
+                            <circle cx="100" cy="110" r="8" fill="#ffffff"/>
+                            <circle cx="200" cy="110" r="8" fill="#ffffff"/>
+                            <circle cx="300" cy="110" r="8" fill="#ffffff"/>
+                            
+                            <path d="M85,130 Q100,145 115,130" fill="none" stroke="#ffffff" stroke-width="2"/>
+                            <path d="M185,130 Q200,145 215,130" fill="none" stroke="#ffffff" stroke-width="2"/>
+                            <path d="M285,130 Q300,145 315,130" fill="none" stroke="#ffffff" stroke-width="2"/>
+                            
+                            <!-- Labels -->
+                            <rect x="60" y="180" width="80" height="20" rx="5" fill="#57b0f6" opacity="0.7"/>
+                            <rect x="160" y="180" width="80" height="20" rx="5" fill="#57b0f6" opacity="0.7"/>
+                            <rect x="260" y="180" width="80" height="20" rx="5" fill="#57b0f6" opacity="0.7"/>
+                            
+                            <text x="100" y="195" font-size="12" text-anchor="middle" fill="#ffffff">Dr. Rahul Machchhar Machchhar</text>
+                            <text x="200" y="195" font-size="12" text-anchor="middle" fill="#ffffff">Hygienist</text>
+                            <text x="300" y="195" font-size="12" text-anchor="middle" fill="#ffffff">Assistant</text>
+                        </svg>
+                    </div>
+                    <div class="gallery-caption">
+                        <h5>Our Dental Team</h5>
+                        <p>Meet our caring professionals</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Smile Makeover -->
+            <div class="col-md-6 col-lg-4 gallery-item smile-makeovers">
+                <div class="card h-100">
+                    <div class="gallery-image">
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="#f0f8ff"/>
+                            
+                            <!-- Background -->
+                            <rect x="25" y="25" width="350" height="250" rx="5" fill="#ffffff" stroke="#57b0f6" stroke-width="2"/>
+                            
+                            <!-- Smile -->
+                            <circle cx="200" cy="150" r="100" fill="none" stroke="#57b0f6" stroke-width="2" stroke-dasharray="5,5"/>
+                            <path d="M125,150 Q200,225 275,150" fill="none" stroke="#57b0f6" stroke-width="3"/>
+                            
+                            <!-- Teeth -->
+                            <rect x="145" y="150" width="20" height="25" rx="3" fill="#ffffff" stroke="#57b0f6" stroke-width="1"/>
+                            <rect x="170" y="150" width="20" height="30" rx="3" fill="#ffffff" stroke="#57b0f6" stroke-width="1"/>
+                            <rect x="195" y="150" width="20" height="32" rx="3" fill="#ffffff" stroke="#57b0f6" stroke-width="1"/>
+                            <rect x="220" y="150" width="20" height="30" rx="3" fill="#ffffff" stroke="#57b0f6" stroke-width="1"/>
+                            <rect x="245" y="150" width="20" height="25" rx="3" fill="#ffffff" stroke="#57b0f6" stroke-width="1"/>
+                            
+                            <!-- Text -->
+                            <text x="200" y="80" font-size="18" text-anchor="middle" fill="#57b0f6">Smile Makeover</text>
+                            <text x="200" y="250" font-size="14" text-anchor="middle" fill="#333333">Veneers & Whitening</text>
+                        </svg>
+                    </div>
+                    <div class="gallery-caption">
+                        <h5>Complete Smile Transformation</h5>
+                        <p>Combining multiple cosmetic procedures</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Clinic 3 -->
+            <div class="col-md-6 col-lg-4 gallery-item clinic">
+                <div class="card h-100">
+                    <div class="gallery-image">
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="#f0f8ff"/>
+                            <rect x="25" y="25" width="350" height="250" rx="5" fill="#ffffff" stroke="#57b0f6" stroke-width="2"/>
+                            
+                            <!-- Building exterior -->
+                            <rect x="100" y="75" width="200" height="150" fill="#e6f0ff" stroke="#57b0f6" stroke-width="2"/>
+                            
+                            <!-- Door -->
+                            <rect x="185" y="175" width="30" height="50" fill="#57b0f6"/>
+                            <circle cx="205" cy="200" r="3" fill="#ffffff"/>
+                            
+                            <!-- Windows -->
+                            <rect x="120" y="100" width="40" height="40" fill="#d6eaff" stroke="#57b0f6"/>
+                            <rect x="240" y="100" width="40" height="40" fill="#d6eaff" stroke="#57b0f6"/>
+                            <rect x="120" y="160" width="40" height="40" fill="#d6eaff" stroke="#57b0f6"/>
+                            <rect x="240" y="160" width="40" height="40" fill="#d6eaff" stroke="#57b0f6"/>
+                            
+                            <!-- Sign -->
+                            <rect x="140" y="50" width="120" height="25" rx="5" fill="#57b0f6"/>
+                            <text x="200" y="67" font-size="12" text-anchor="middle" fill="#ffffff">RAM DENTAL CLINIC</text>
+                            
+                            <!-- Landscaping -->
+                            <rect x="75" y="225" width="250" height="25" fill="#6dc993" opacity="0.5"/>
+                            <circle cx="100" cy="215" r="10" fill="#6dc993" opacity="0.7"/>
+                            <circle cx="300" cy="215" r="10" fill="#6dc993" opacity="0.7"/>
+                        </svg>
+                    </div>
+                    <div class="gallery-caption">
+                        <h5>Clinic Exterior</h5>
+                        <p>Our modern dental practice</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Team 2 -->
+            <div class="col-md-6 col-lg-4 gallery-item team">
+                <div class="card h-100">
+                    <div class="gallery-image">
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="#f0f8ff"/>
+                            <rect x="25" y="25" width="350" height="250" rx="5" fill="#ffffff" stroke="#57b0f6" stroke-width="2"/>
+                            
+                            <!-- Doctor with patient -->
+                            <circle cx="150" cy="120" r="40" fill="#57b0f6" opacity="0.5"/>
+                            <circle cx="250" cy="120" r="40" fill="#f5a623" opacity="0.3"/>
+                            
+                            <!-- Simplified faces -->
+                            <circle cx="150" cy="110" r="8" fill="#ffffff"/>
+                            <circle cx="250" cy="110" r="8" fill="#ffffff"/>
+                            
+                            <path d="M135,130 Q150,145 165,130" fill="none" stroke="#ffffff" stroke-width="2"/>
+                            <path d="M235,130 Q250,145 265,130" fill="none" stroke="#ffffff" stroke-width="2"/>
+                            
+                            <!-- Dental equipment -->
+                            <rect x="175" y="170" width="50" height="10" fill="#cccccc"/>
+                            <rect x="190" y="180" width="20" height="30" fill="#cccccc"/>
+                            
+                            <!-- Labels -->
+                            <rect x="110" y="180" width="80" height="20" rx="5" fill="#57b0f6" opacity="0.7"/>
+                            <rect x="210" y="220" width="80" height="20" rx="5" fill="#f5a623" opacity="0.5"/>
+                            
+                            <text x="150" y="195" font-size="12" text-anchor="middle" fill="#ffffff">Dentist</text>
+                            <text x="250" y="235" font-size="12" text-anchor="middle" fill="#ffffff">Patient</text>
+                        </svg>
+                    </div>
+                    <div class="gallery-caption">
+                        <h5>Patient Consultation</h5>
+                        <p>Personalized dental care</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials-section py-5 bg-light">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-md-12 text-center">
+                <h2>Patient Testimonials</h2>
+                <p class="lead">Read what our patients have to say about their experiences</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-single" id="testimonial1">
+                    <div class="star-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    
+                    <div class="testimonial-content">
+                        <div class="short-text">
+                            <p>"I've always been terrified of dental visits, but Dr. Rahul Machchhar Machchhar and her team have completely changed my experience. 
+                            From the moment you walk in, the atmosphere is calming and welcoming..."</p>
+                            <button class="btn btn-sm btn-link read-more-btn p-0" data-testimonial="testimonial1">Read More</button>
+                        </div>
+                        
+                        <div class="full-text d-none">
+                            <p>"I've always been terrified of dental visits, but Dr. Rahul Machchhar Machchhar and her team have completely changed my experience. 
+                            From the moment you walk in, the atmosphere is calming and welcoming. Dr. Rahul Machchhar Machchhar takes the time to explain everything 
+                            and makes sure you're comfortable throughout the procedure.</p>
+                            
+                            <p>I recently had a root canal, which I was dreading, but it was actually painless! The technology they use is 
+                            state-of-the-art, and they offer amenities like noise-canceling headphones and blankets to help you relax. 
+                            I never thought I'd say this, but I actually don't mind going to the dentist anymore. Highly recommend RAM DENTAL CLINIC!"</p>
+                            <button class="btn btn-sm btn-link read-more-btn p-0" data-testimonial="testimonial1">Read Less</button>
+                        </div>
+                    </div>
+                    
+                    <div class="patient-info">
+                        <div class="patient-avatar">
+                            <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="30" cy="30" r="30" fill="#f0f8ff"/>
+                                <circle cx="30" cy="20" r="10" fill="#57b0f6" opacity="0.7"/>
+                                <path d="M10,60 L10,45 C10,35 20,30 30,30 C40,30 50,35 50,45 L50,60" fill="#57b0f6" opacity="0.7"/>
+                            </svg>
+                        </div>
+                        <div class="patient-details">
+                            <h5>Sarah Johnson</h5>
+                            <p>Patient for 3 years</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-single" id="testimonial2">
+                    <div class="star-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    
+                    <div class="testimonial-content">
+                        <div class="short-text">
+                            <p>"The entire family goes to RAM DENTAL CLINIC, and we couldn't be happier. My kids used to dread dental visits, 
+                            but now they actually look forward to them! The children's waiting area..."</p>
+                            <button class="btn btn-sm btn-link read-more-btn p-0" data-testimonial="testimonial2">Read More</button>
+                        </div>
+                        
+                        <div class="full-text d-none">
+                            <p>"The entire family goes to RAM DENTAL CLINIC, and we couldn't be happier. My kids used to dread dental visits, 
+                            but now they actually look forward to them! The children's waiting area with games and activities makes them feel at ease, 
+                            and Dr. Rahul Machchhar Machchhar has a special way with kids that turns a potentially scary experience into a positive one.</p>
+                            
+                            <p>For the adults in our family, the care is equally excellent. My elderly parents have complex dental needs, and 
+                            Dr. Rahul Machchhar Machchhar takes extra time to ensure they understand all their options. The front desk staff is incredibly helpful 
+                            with scheduling and insurance questions. It's rare to find a practice that can expertly treat patients from age 5 to 85, 
+                            but RAM DENTAL CLINIC does it with ease and compassion."</p>
+                            <button class="btn btn-sm btn-link read-more-btn p-0" data-testimonial="testimonial2">Read Less</button>
+                        </div>
+                    </div>
+                    
+                    <div class="patient-info">
+                        <div class="patient-avatar">
+                            <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="30" cy="30" r="30" fill="#f0f8ff"/>
+                                <circle cx="30" cy="20" r="10" fill="#57b0f6" opacity="0.7"/>
+                                <path d="M10,60 L10,45 C10,35 20,30 30,30 C40,30 50,35 50,45 L50,60" fill="#57b0f6" opacity="0.7"/>
+                            </svg>
+                        </div>
+                        <div class="patient-details">
+                            <h5>Michael Thompson</h5>
+                            <p>Patient for 5 years</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-single" id="testimonial3">
+                    <div class="star-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    
+                    <div class="testimonial-content">
+                        <div class="short-text">
+                            <p>"I chipped my front tooth on a Friday evening and was panicking about having to wait until Monday. I called the 
+                            emergency number, and to my surprise, Dr. Rahul Machchhar Machchhar agreed to see me the next morning..."</p>
+                            <button class="btn btn-sm btn-link read-more-btn p-0" data-testimonial="testimonial3">Read More</button>
+                        </div>
+                        
+                        <div class="full-text d-none">
+                            <p>"I chipped my front tooth on a Friday evening and was panicking about having to wait until Monday. I called the 
+                            emergency number, and to my surprise, Dr. Rahul Machchhar Machchhar agreed to see me the next morning. She repaired my tooth so beautifully 
+                            that you can't even tell it was damaged. The color match is perfect!</p>
+                            
+                            <p>Since then, I've switched all my regular dental care to RAM DENTAL CLINIC. Their attention to detail and 
+                            willingness to go above and beyond is unmatched. The office is immaculate, and they use the latest technology, 
+                            which makes procedures faster and more comfortable. Dr. Rahul Machchhar Machchhar takes the time to explain all your options and never 
+                            pushes unnecessary treatments. I've referred several friends who are equally impressed."</p>
+                            <button class="btn btn-sm btn-link read-more-btn p-0" data-testimonial="testimonial3">Read Less</button>
+                        </div>
+                    </div>
+                    
+                    <div class="patient-info">
+                        <div class="patient-avatar">
+                            <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="30" cy="30" r="30" fill="#f0f8ff"/>
+                                <circle cx="30" cy="20" r="10" fill="#57b0f6" opacity="0.7"/>
+                                <path d="M10,60 L10,45 C10,35 20,30 30,30 C40,30 50,35 50,45 L50,60" fill="#57b0f6" opacity="0.7"/>
+                            </svg>
+                        </div>
+                        <div class="patient-details">
+                            <h5>Jennifer Rodriguez</h5>
+                            <p>Patient for 2 years</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 4 -->
+                <div class="testimonial-single" id="testimonial4">
+                    <div class="star-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    
+                    <div class="testimonial-content">
+                        <div class="short-text">
+                            <p>"I recently completed Invisalign treatment with Dr. Rahul Machchhar Machchhar, and I couldn't be happier with the results! After years 
+                            of being self-conscious about my smile, I finally have the straight teeth I've always wanted..."</p>
+                            <button class="btn btn-sm btn-link read-more-btn p-0" data-testimonial="testimonial4">Read More</button>
+                        </div>
+                        
+                        <div class="full-text d-none">
+                            <p>"I recently completed Invisalign treatment with Dr. Rahul Machchhar Machchhar, and I couldn't be happier with the results! After years 
+                            of being self-conscious about my smile, I finally have the straight teeth I've always wanted. Dr. Rahul Machchhar Machchhar was incredibly 
+                            thorough in explaining the process and setting realistic expectations.</p>
+                            
+                            <p>Throughout the treatment, the entire team was supportive and accommodating. They were flexible with appointments to 
+                            work around my busy schedule, and always checked in to make sure I was comfortable with how the treatment was progressing. 
+                            What impressed me most was Dr. Rahul Machchhar Machchhar's attention to detail—she made small adjustments toward the end to ensure my smile 
+                            was absolutely perfect. I've received so many compliments, and I'm no longer afraid to smile in photos. 
+                            Thank you, RAM DENTAL CLINIC!"</p>
+                            <button class="btn btn-sm btn-link read-more-btn p-0" data-testimonial="testimonial4">Read Less</button>
+                        </div>
+                    </div>
+                    
+                    <div class="patient-info">
+                        <div class="patient-avatar">
+                            <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="30" cy="30" r="30" fill="#f0f8ff"/>
+                                <circle cx="30" cy="20" r="10" fill="#57b0f6" opacity="0.7"/>
+                                <path d="M10,60 L10,45 C10,35 20,30 30,30 C40,30 50,35 50,45 L50,60" fill="#57b0f6" opacity="0.7"/>
+                            </svg>
+                        </div>
+                        <div class="patient-details">
+                            <h5>David Wilson</h5>
+                            <p>Patient for 1.5 years</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Reviews Widget Section -->
+<section class="reviews-section py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2>Our Online Reviews</h2>
+                <p class="lead mb-5">See what people are saying about us online</p>
+
+                <div class="reviews-summary card shadow p-4">
+                    <div class="row align-items-center">
+                        <div class="col-md-4 text-center mb-4 mb-md-0">
+                            <div class="overall-rating">
+                                <h3 class="display-4 text-primary">4.9</h3>
+                                <div class="stars mb-2">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p>Based on 150+ reviews</p>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="platform-reviews">
+                                <div class="review-platform mb-3">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span><i class="fab fa-google me-2"></i> Google</span>
+                                        <span class="text-primary">4.9 <i class="fas fa-star small"></i></span>
+                                    </div>
+                                    <div class="progress" style="height: 10px;">
+                                        <div class="progress-bar bg-primary" style="width: 98%"></div>
+                                    </div>
+                                </div>
+
+                                <div class="review-platform mb-3">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span><i class="fas fa-hospital me-2"></i> Practo</span>
+                                        <span class="text-primary">4.8 <i class="fas fa-star small"></i></span>
+                                    </div>
+                                    <div class="progress" style="height: 10px;">
+                                        <div class="progress-bar bg-primary" style="width: 96%"></div>
+                                    </div>
+                                </div>
+
+                                <div class="review-platform">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span><i class="fab fa-facebook me-2"></i> Facebook</span>
+                                        <span class="text-primary">5.0 <i class="fas fa-star small"></i></span>
+                                    </div>
+                                    <div class="progress" style="height: 10px;">
+                                        <div class="progress-bar bg-primary" style="width: 100%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-cta mt-4 pt-4 border-top">
+                        <p>Had a great experience at our clinic? We'd appreciate your feedback!</p>
+                        <div class="review-buttons">
+                            <a href="#" class="btn btn-outline-primary btn-sm me-2 mb-2"><i class="fab fa-google me-1"></i> Review on Google</a>
+                            <a href="https://www.practo.com/client/reviews" class="btn btn-outline-primary btn-sm me-2 mb-2"><i class="fas fa-hospital me-1"></i> Review on Practo</a>
+                            <a href="#" class="btn btn-outline-primary btn-sm mb-2"><i class="fab fa-facebook me-1"></i> Review on Facebook</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="cta-section py-5 bg-primary text-white">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 mb-4 mb-lg-0">
+                <h2>Ready to Transform Your Smile?</h2>
+                <p class="lead mb-0">Contact us today to schedule your appointment and experience the Smile Bright difference.</p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+                <a href="{{ url_for('contact') }}#appointment-form" class="btn btn-light btn-lg">Book Your Visit</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
