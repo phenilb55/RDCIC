@@ -1,5 +1,5 @@
 [build]
-  functions = "functions"  # Make sure Netlify runs your Flask backend
+  functions = "functions"
   command = "pip install --quiet -r requirements.txt"
 
 [[redirects]]

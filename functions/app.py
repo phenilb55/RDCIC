@@ -1,16 +1,22 @@
 import os
 import logging
-from flask import Flask, render_template # type: ignore
-from flask_lambda import FlaskLambda  # type: ignore # Make Flask work with Netlify functions
-
+from flask import Flask, render_template 
 logging.basicConfig(level=logging.DEBUG)
 
-app = FlaskLambda(Flask(__name__),
-                  template_folder="templates",
-                  static_folder="static")
+# Create Flask app
+app = Flask(__name__, 
+            template_folder=os.path.join(os.path.dirname(__file__), "../templates"),
+            static_folder=os.path.join(os.path.dirname(__file__), "../static"))
 
+# Secret key for sessions
 app.secret_key = os.environ.get("SESSION_SECRET", "your-secure-key")
-# Routes
+
+# ✅ Debugging Route
+@app.route('/test')
+def test():
+    return {"message": "Flask function is working!"}
+
+# ✅ Main Routes
 @app.route('/')
 def index():
     return render_template('index.html', active_page='home')
@@ -47,6 +53,15 @@ def privacy():
 def terms():
     return render_template('terms.html', active_page='terms')
 
+@app.route('/contact')
+def contact():
+    return render_template('contact.html', active_page='contact')
+
+@app.route('/gallery')
+def gallery():
+    return render_template('gallery.html', active_page='gallery')
+
+# ✅ Services Routes
 @app.route('/services/dental-implants')
 def dental_implants():
     return render_template('services/dental_implants.html', active_page='services')
@@ -87,12 +102,6 @@ def wisdom_tooth_extraction():
 def root_canal_treatment():
     return render_template('services/root_canal-treatment.html', active_page='services')
 
-@app.route('/contact')
-def contact():
-    return render_template('contact.html', active_page='contact')
-
-@app.route('/gallery')
-def gallery():
-    return render_template('gallery.html', active_page='gallery')
-
-# No need for a separate handler function since FlaskLambda does this automatically
+# ✅ Export as Netlify Function
+def handler(event, context):
+    return app(event, context)
